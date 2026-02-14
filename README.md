@@ -10,9 +10,10 @@ One Python exercise, every day. This repository is a personal log of consistent 
 Each problem lives in its own folder, named with a three‑digit index and a short description:
 
 - `001_find_second_highest/`
-  - `solution.py` — code with complexity analysis
-  - `explanation.md` — thought process and alternatives
-  - `test_solution.py` — unit tests
+  - `solution.py` 
+  - `explanation.md` 
+
+
 ## Progress
 
 | # | Date       | Problem                | Difficulty | Solution                                     |
