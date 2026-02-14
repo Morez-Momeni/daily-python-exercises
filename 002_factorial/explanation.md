@@ -17,12 +17,6 @@ Directly translates the mathematical definition into code:
 ### 2. Iterative approach
 Uses a loop to multiply numbers from 1 to `n`.
 
-## Complexity
-| Approach    | Time  | Space |
-|-------------|-------|-------|
-| Recursive   | O(n)  | O(n)  |
-| Iterative   | O(n)  | O(1)  |
-
 ## What I Learned
 - How recursion uses the call stack.
 - Trade‑offs between recursion and iteration.
