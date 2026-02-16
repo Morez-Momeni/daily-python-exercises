@@ -12,7 +12,12 @@ Each problem lives in its own folder, named with a three‑digit index and a sho
 - `001_find_second_highest/`
   - `solution.py` 
   - `explanation.md` 
+## Progress Overview
 
+**Total Exercises:** 5 / 100  
+**Progress:** █████░░░░░░░░░░░░░░░ 5%
+
+---
 
 ## Progress
 | # | Date       | Problem                | Difficulty | Solution                                     |
