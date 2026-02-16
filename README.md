@@ -13,20 +13,6 @@ Each problem lives in its own folder, named with a three‑digit index and a sho
   - `solution.py` 
   - `explanation.md`
  
-## Stats
-
-| Metric            | Value |
-|-------------------|-------|
-| Total Exercises   | 5     |
-| Easy              | 4     |
-| Medium            | 1     |
-| Last Updated      | 2026-02-17 |
-
----
-## Progress Overview
-**Total Exercises:** 5 / 100  
-**Progress:** █████░░░░░░░░░░░░░░░ 5%
-
 ---
 
 ## Progress
