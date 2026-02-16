@@ -21,3 +21,4 @@ Each problem lives in its own folder, named with a three‑digit index and a sho
 | 2 | 2025-02-15 | Factorial (Recursion & Iteration) | Easy | [solution.py](002_factorial/solution.py) |
 | 3 | 2026-02-16 | Filter Palindromes      | Easy       | [solution.py](003_filter_palindromes/solution.py) |
 | 4 | 2026-02-16 | Somple Library Management System  | Medium     | [solution.py](004_library_management/solution.py) |
+| 5 | 2026-02-17 | Check anagram strings  | Easy     | [solution.py](005_check_anagram/solution.py) |
