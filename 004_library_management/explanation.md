@@ -69,7 +69,7 @@ This is a beginner-friendly library management system built with Python. It demo
 
 ---
 
-## 🔮 Future Improvements (My Todo List)
+## 🔮 Future Improvements
 
 - [ ] Save/load data to JSON file
 - [ ] Add search by title and author
@@ -82,6 +82,3 @@ This is a beginner-friendly library management system built with Python. It demo
 - [ ] Implement return book functionality
 - [ ] Add due dates and fine calculation
 - [ ] Create a proper CLI menu
-
-
-## 🧪 How to Test the Current Versio
