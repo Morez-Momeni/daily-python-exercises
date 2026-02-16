@@ -69,7 +69,7 @@ This is a beginner-friendly library management system built with Python. It demo
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 - [ ] Save/load data to JSON file
 - [ ] Add search by title and author
