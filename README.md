@@ -13,7 +13,7 @@ Each problem lives in its own folder, named with a three‑digit index and a sho
   - `solution.py` 
   - `explanation.md`
  
----
+
 
 ## Progress
 | # | Date       | Problem                | Difficulty | Solution                                     |
