@@ -9,7 +9,7 @@ One Python exercise, every day. This repository is a personal log of consistent 
 
 Each problem lives in its own folder, named with a three‑digit index and a short description:
 
-| Folder (example) | Files |
+| Folder | Files |
 |------------------|-------|
 | `001_problem_name/` | `solution.py` , `explanation.md` |
 
