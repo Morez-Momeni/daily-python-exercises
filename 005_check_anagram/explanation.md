@@ -22,3 +22,20 @@ I wrote a function `check_anagram(str1, str2)` that follows these steps:
    - If all characters pass, the helper returns `True`.
 3. **Call the helper** – If lengths are equal and the helper returns `True`, the function returns `True`; otherwise, it returns `False`.
 
+## Edge Cases Considered
+- Strings with spaces/punctuation – treated as ordinary characters.
+- Case sensitivity – currently case‑sensitive; can be adapted.
+> Note: This code will be reviewed and improved over time. Future versions will handle more edge cases, add input validation, and optimize performance.
+
+
+## What I Learned
+- String comparison fundamentals
+- Nested functions
+
+## Future Improvements
+- []Add optional case‑insensitivity and space ignoring.
+- []Optimize for very large strings.
+> All exercises in this repository are continuously reviewed and enhanced.
+This code is a working solution but may not handle all edge cases. It will be reviewed and improved over time as I learn more about error handling, performance, and best practices. 
+
+
