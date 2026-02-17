@@ -13,6 +13,7 @@ Approach:
 - If all counts match, return True; otherwise, return False.
 """
 
+
 def check_anagram(str1,str2):
     
     def count_char(s1,s2):
@@ -23,11 +24,13 @@ def check_anagram(str1,str2):
             return True
   
     if len(str1) == len(str2):
-        if count_char(str1,str2) == True :  
-            return True
-        else:
-            return False
-    return False         
+        if str1=="" and str2== "" :
+            return f"strings are empty"
+            if count_char(str1,str2) == True :  
+                return True
+            else:
+                return False
+        return False         
                 
                 
 
@@ -38,5 +41,10 @@ print(check_anagram(str1,str2))
 
 str1 = "rat"
 str2 = "car"
+
+print(check_anagram(str1,str2))
+
+str1 = ""
+str2 = ""
 
 print(check_anagram(str1,str2))
