@@ -33,9 +33,9 @@ I wrote a function `check_anagram(str1, str2)` that follows these steps:
 - Nested functions
 
 ## Future Improvements
-- []Add optional case‑insensitivity and space ignoring.
-- []Optimize for very large strings.
-> All exercises in this repository are continuously reviewed and enhanced.
-This code is a working solution but may not handle all edge cases. It will be reviewed and improved over time as I learn more about error handling, performance, and best practices. 
+- [ ] Add optional case‑insensitivity and space ignoring.
+- [ ] Optimize for very large strings.
+
+
 
 
