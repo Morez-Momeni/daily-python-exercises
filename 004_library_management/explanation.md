@@ -49,24 +49,19 @@ This is a beginner-friendly library management system built with Python. It demo
 ## What's New In (Updated: 2026‑02‑18)
 
 ### Improvements from Previous Version
-1. **Added book category** – More detailed book information
-2. **Enhanced search functionality** – Interactive menu with multiple options
-3. **Better user experience** – Clear prompts and feedback messages
-4. **Improved error handling** – Prevents crashes from invalid input
-5. **Empty collection handling** – Graceful messages when no books exist
-6. **Case-insensitive search** – More user-friendly
-7. **Multiple search attempts** – Users can search repeatedly without restarting
-8. **Visual enhancements** – Emojis and formatting for better readability
-
-###  New Methods Added
-- `check_isbn()` – Separate method to view all ISBNs
-- Improved `search()` with interactive menu
-- Enhanced `check_borrow()` with better user feedback
+1. **Added book category**
+2. **Enhanced search functionality** 
+3. **Better user experience** 
+4. **Improved error handling** 
+5. **Case-insensitive search** 
+6. **Multiple search attempts** 
 
 ---
 
-
-
+###  New Methods Added
+- `check_isbn()` 
+- Improved `search()` 
+- Enhanced `check_borrow()` 
 
 ---
 **This is simple version** – a working prototype that will be improved over time as I learn more.
