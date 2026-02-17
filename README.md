@@ -3,6 +3,8 @@
 One Python exercise, every day. This repository is a personal log of consistent practice — solving small problems, writing clean code, and documenting the thought process. No perfectionism, just progress.
 
 
+---
+
 ## Structure
 
 Each problem lives in its own folder, named with a three‑digit index and a short description:
