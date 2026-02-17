@@ -6,6 +6,7 @@ One Python exercise, every day. This repository is a personal log of consistent 
 > Aristotle
 
 
+
 ## Structure
 
 Each problem lives in its own folder, named with a three‑digit index and a short description:
