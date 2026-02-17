@@ -7,16 +7,22 @@ This is a beginner-friendly library management system built with Python. It demo
 ---
 
 ## Current Features
-- Create books with title, author, category, and a randomly generated ISBN.
-- Track whether a book is borrowed
-- Add books to a library collection
-- Display all books in the library
-- View all ISBNs alongside their corresponding book titles.
-- Interactive search menu allowing searches by: Author name and ISBN
-- Borrow functionality – check availability by book title and borrow if available.
+
+### Book Class
+- Title, author, category, and ISBN (randomly generated)
+- Borrow status tracking
+
+### Library Class
+- Add multiple books to collection
+- Display all books with details
+- Show ISBN registry
+- **Interactive search** by:
+  - Author name
+  - ISBN
+- **Borrow functionality** with availability check
+- User-friendly menu system
 
 ---
-
 ## Class Design
 
 ### `Book` Class
@@ -40,5 +46,28 @@ This is a beginner-friendly library management system built with Python. It demo
 
 ---
 
+## What's New In (Updated: 2026‑02‑18)
+
+### Improvements from Previous Version
+1. **Added book category** – More detailed book information
+2. **Enhanced search functionality** – Interactive menu with multiple options
+3. **Better user experience** – Clear prompts and feedback messages
+4. **Improved error handling** – Prevents crashes from invalid input
+5. **Empty collection handling** – Graceful messages when no books exist
+6. **Case-insensitive search** – More user-friendly
+7. **Multiple search attempts** – Users can search repeatedly without restarting
+8. **Visual enhancements** – Emojis and formatting for better readability
+
+###  New Methods Added
+- `check_isbn()` – Separate method to view all ISBNs
+- Improved `search()` with interactive menu
+- Enhanced `check_borrow()` with better user feedback
+
+---
+
+
+
+
+---
 **This is simple version** – a working prototype that will be improved over time as I learn more.
 > (Updated: 2026‑02‑18)
