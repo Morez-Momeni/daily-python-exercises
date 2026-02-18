@@ -23,6 +23,7 @@ Each problem lives in its own folder, named with a three‑digit index and a sho
 | 3 | 2026-02-16 | Filter Palindromes      | Easy       | [solution.py](003_filter_palindromes/solution.py) |
 | 4 | 2026-02-16 | Somple Library Management System  | Medium     | [solution.py](004_library_management/solution.py) |
 | 5 | 2026-02-17 | Check anagram strings  | Easy     | [solution.py](005_check_anagram/solution.py) |
+| 6 | 2026-02-18 | Flatten Nested List   | Medium     | [solution.py](006_flatten_nested_list/solution.py) |
 
 --- 
 
