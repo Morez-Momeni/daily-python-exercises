@@ -20,11 +20,11 @@ class Book:
     
     def __init__(self, title, author, category ,is_borrow = False):
         
-        self.title = title
-        self.author = author
+        self.title = title.strip().lower()
+        self.author = author.strip().lower()
         self.isbn = "".join(random.choices(string.ascii_letters, k=10))
         self.is_borrow = is_borrow
-        self.category = category
+        self.category = category.strip().lower()
 
 
 
@@ -43,7 +43,7 @@ class Library:
             print(f"Books: {book.title} <---> {book.author}")
     
 
-    def check_lsbn(self):
+    def check_Isbn(self):
 
         for book in self.books:
             print(f"{book.isbn} for book :{book.title}")
@@ -53,17 +53,22 @@ class Library:
        
         while True:
             
-            print("Do you want search with wich options: \n1)author\n2)ISBN\n3)Exit")
+            print("Do you want search with wich options: \n1)Author\n2)ISBN\n3)Book name\n4)Exit")
             user_choise = int(input("Enter your number : "))
             if user_choise == 1 :
+                
+                flag = False
                 author_name = input("author name : ").strip().lower()
                 for book in self.books:
                     if book.author == author_name:
                         print(f"book name {book.title} and author {book.author} and ISBN is {book.isbn}")
-
+                        flag = True
                     else:
-                        print("Dosent Exists")
-                
+                        continue
+                else:
+                    if flag == False:
+                        print("dosent exist")
+                 
                 print("\ncontinue ? ")
                 yes_or_no = input("yes or no ? ").lower().strip()
                 if yes_or_no == "yes":
@@ -72,13 +77,17 @@ class Library:
                     break
 
             elif  user_choise == 2:
+                flag = False
                 user_isbn = input("isbn : ").strip()
                 for book in self.books:
                     if book.isbn == user_isbn:
                         print(f"book name {book.title} and author {book.author} and ISBN is {book.isbn}")
+                        flag = True
                     else:
-                        print("Dosent Exists")
-                
+                        continue
+                if flag == False:
+                    print("dosent exist")
+                    
                 print("\ncontinue ? ")
                 yes_or_no = input("yes or no ? ").lower().strip()
                 if yes_or_no == "yes":
@@ -87,9 +96,29 @@ class Library:
                     break
             
             elif user_choise == 3 :
+                flag = False
+                book_name = input("book name : ").strip().lower()
+                for book in self.books:
+                    if book.title == book_name:
+                        print(f"book name {book.title} and author {book.author} and ISBN is {book.isbn}")
+                        flag = True
+                    else:
+                        continue
+                if flag == False:
+                    
+                    print("dosent exist")
+                    
+                
+                print("\ncontinue ? ")
+                yes_or_no = input("yes or no ? ").lower().strip()
+                if yes_or_no == "yes":
+                        continue
+                else:
+                    break
+            
+            elif user_choise == 4 :
 
                 break
-
             else:
                 print("Invalid number")
                 continue
@@ -126,7 +155,9 @@ if __name__ == "__main__":
         Book("The Alchemist", "Paulo Coelho", "Fiction"),
         Book("Clean Code", "Robert Martin", "Programming"),
         Book("1984", "George Orwell", "Fiction"),
-        Book("Sapiens", "Yuval Harari", "History")
+        Book("Sapiens", "Yuval Harari", "History"),
+        Book("mio", "Yuval Harari", "History"),
+        Book("mio", "Yuval Harari", "History"),
     ]
     
 
@@ -139,7 +170,7 @@ if __name__ == "__main__":
     
     my_library.show_books()
     
-    my_library.check_isbn()
+    my_library.check_Isbn()
     
     my_library.search()
     
