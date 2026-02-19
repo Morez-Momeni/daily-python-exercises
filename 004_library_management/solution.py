@@ -1,6 +1,6 @@
 """
-Problem #4: Library Management System (Updated Version)
-Date: 2026-02-18
+Problem #4: Library Management System 
+
 
 A simple library management system with enhanced functionality:
 - Create books with title, author, category, and random ISBN
@@ -8,8 +8,14 @@ A simple library management system with enhanced functionality:
 - Add multiple books to library
 - Display all books with their authors
 - Show all ISBNs
-- Search books by author or ISBN with interactive menu
+- Search books by author, ISBN, or title with interactive menu
 - Check and borrow books by title
+
+Current version improvements:
+- Search menu now includes title search
+- Fixed the "always print 'd'" bug by using a flag variable
+- Improved input normalization with .strip().lower()
+- More robust user interaction
 """
 
 import random
@@ -43,7 +49,7 @@ class Library:
             print(f"Books: {book.title} <---> {book.author}")
     
 
-    def check_Isbn(self):
+    def check_isbn(self):
 
         for book in self.books:
             print(f"{book.isbn} for book :{book.title}")
@@ -170,7 +176,7 @@ if __name__ == "__main__":
     
     my_library.show_books()
     
-    my_library.check_Isbn()
+    my_library.check_isbn()
     
     my_library.search()
     
