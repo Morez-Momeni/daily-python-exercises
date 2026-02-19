@@ -39,7 +39,7 @@ This is a simple library management system built with Python, designed as a begi
 | `show_books()` | Prints all books with title and author |
 | `check_Isbn()` | Lists every ISBN with its book title |
 | `search()` | Interactive menu to search by author, ISBN, or title |
-| `check_borrow()` | Handles borrowing  |
+| `check_borrow()` | **New** Lists all available (not borrowed) books |
 
 ---
 
