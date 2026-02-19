@@ -2,20 +2,20 @@
 Problem #4: Library Management System 
 
 
-A simple library management system with enhanced functionality:
+ simple library management system with enhanced functionality:
 - Create books with title, author, category, and random ISBN
 - Track borrow status
 - Add multiple books to library
 - Display all books with their authors
 - Show all ISBNs
 - Search books by author, ISBN, or title with interactive menu
-- Check and borrow books by title
+- List all available (not borrowed) books
 
 Current version improvements:
-- Search menu now includes title search
-- Fixed the "always print 'd'" bug by using a flag variable
-- Improved input normalization with .strip().lower()
-- More robust user interaction
+- Fixed check_borrow: now lists all books that are available for borrowing
+- Search menu improved with flag variables and proper "not found" messages
+- Input normalization with .strip().lower() for consistency
+
 """
 
 import random
@@ -130,25 +130,18 @@ class Library:
                 continue
         
     def check_borrow(self):
-
-        book_name = input("Enter book name to check : ").strip().lower()
+        flag = False
+        not_borrow = []
         for book in self.books:
-            if book.title == book_name:
-                for i in self.books:
-                    if i.is_borrow:
-                        return f"The book {i.title} was borrowed"
-                    else:
-                        print(f"you can borrow book: {i.title}")
-                        print("Do you want borrow it?")
-                        answer = input("yes/no: ").strip().lower()
-                        if answer == "yes":
-                            i.is_borrow = True
-                            return "you have it"
-                        else:
-                          return "ok, goodluck"
-        else:
-
-            return "wrong name use search method"
+            if book.is_borrow == False:
+                not_borrow.append(book.title)
+                flag = True
+        if flag == False:
+            text = "all book was borrowed"
+            return text
+        
+        for sh in range(len(not_borrow)):
+            print(f"{sh+1}){not_borrow[sh]}")
         
 
 if __name__ == "__main__":
@@ -183,8 +176,8 @@ if __name__ == "__main__":
     print("\n" + "=" * 50)
     print("BORROWING SECTION")
     print("=" * 50)
-    result = my_library.check_borrow()
-    print(result)
+    my_library.check_borrow()
+    
 
 
 
