@@ -26,6 +26,9 @@ Each problem lives in its own folder, named with a three‑digit index and a sho
 | 6 | 2026-02-18 | Flatten Nested List   | Medium     | [solution.py](006_flatten_nested_list/solution.py) |
 | 7 | 2026-02-19 | Find Common Elements             | Easy       | [solution.py](007_find_common_elements/solution.py) |
 | 8 | 2026-02-20 | Find Words in a String          | Medium     | [solution.py](008_words_in_string/solution.py) |
+| 9 | 2026-02-20 | most repeated char in a String          | Easy     | [solution.py](009_most_repeated_character/solution.py) |
+
+
 --- 
 
 ## A Note on Continuous Improvement

@@ -1,0 +1,25 @@
+# Problem 9: Most Repeated Character in a String
+
+## Problem
+Write a function that takes a string and returns the character(s) that appear most frequently. Spaces should be ignored. If multiple characters share the highest frequency, return all of them as a list.
+
+**Example:**  
+`"heloooooooooo iiiiiiiiiii ammm mohammad reza momeni"`  
+Characters: `'o'` appears many times, `'i'` also appears many times, etc.  
+The function should determine which character(s) occur most often.
+
+---
+
+## My Solution
+
+I implemented a straightforward approach:
+
+1. **Strip the string** – Remove leading/trailing spaces (optional but helps clean input).
+2. **Handle empty input** – If the string is empty (or only spaces after stripping), return an empty list.
+3. **Count frequencies** – Iterate over each character in the string:
+   - Skip spaces.
+   - Use the built‑in `str.count()` method to count how many times the character appears in the whole string, and store it in a dictionary.
+4. **Find maximum frequency** – Use `max()` on the dictionary values.
+5. **Collect characters** – List comprehension to gather all characters whose count equals the maximum.
+6. **Return the list** – This list contains the most frequent character(s).
+
