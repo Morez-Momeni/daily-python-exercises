@@ -25,7 +25,7 @@ Each problem lives in its own folder, named with a three‑digit index and a sho
 | 5 | 2026-02-17 | Check anagram strings  | Easy     | [solution.py](005_check_anagram/solution.py) |
 | 6 | 2026-02-18 | Flatten Nested List   | Medium     | [solution.py](006_flatten_nested_list/solution.py) |
 | 7 | 2026-02-19 | Find Common Elements             | Easy       | [solution.py](007_find_common_elements/solution.py) |
-| 8 | 2026-02-19 | Find Words in a String          | Medium     | [solution.py](008_words_in_string/solution.py) |
+| 8 | 2026-02-20 | Find Words in a String          | Medium     | [solution.py](008_words_in_string/solution.py) |
 --- 
 
 ## A Note on Continuous Improvement
