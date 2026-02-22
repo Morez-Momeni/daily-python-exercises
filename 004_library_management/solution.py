@@ -1,186 +1,90 @@
 """
-Problem #4: Library Management System 
+Problem #4: Library Management System (Current Version)
+Date: 2026-02-22
 
-
- simple library management system with enhanced functionality:
-- Create books with title, author, category, and random ISBN
-- Track borrow status
-- Add multiple books to library
-- Display all books with their authors
-- Show all ISBNs
-- Search books by author, ISBN, or title with interactive menu
-- List all available (not borrowed) books
-
-Current version improvements:
-- Fixed check_borrow: now lists all books that are available for borrowing
-- Search menu improved with flag variables and proper "not found" messages
-- Input normalization with .strip().lower() for consistency
-
+A simple library management system using modular design.
+Books and Users are stored in dictionaries with auto-generated IDs.
+Interactive menu allows adding, showing, and removing books.
 """
 
+from books import Book
+from users import User
 import random
 import string
 
 
-class Book:
-    
-    def __init__(self, title, author, category ,is_borrow = False):
-        
-        self.title = title.strip().lower()
-        self.author = author.strip().lower()
-        self.isbn = "".join(random.choices(string.ascii_letters, k=10))
-        self.is_borrow = is_borrow
-        self.category = category.strip().lower()
 
-
-
-class Library:
+class Library :
     
     def __init__(self):
         
-        self.books = []
-    def add_books(self,book):
-        
-        self.books.append(book) 
+        self.books = {}
+        self.users = {}
     
+    def add_book(self,book):
+
+        letters = "".join(random.choices(string.ascii_letters,k=10))
+        self.books[letters] = book
+        return self.books
+
+    def remove_book(self,code):
+        
+        if self.books.get(code):
+            self.books.pop(code)
+            
+        return self.books
+
     def show_books(self):
 
-        for book in self.books:
-            print(f"Books: {book.title} <---> {book.author}")
-    
-
-    def check_isbn(self):
-
-        for book in self.books:
-            print(f"{book.isbn} for book :{book.title}")
+        for i,j in self.books.items():
+            print(f"id: {i}, name: {j.title}")
 
 
-    def search (self):
-       
-        while True:
-            
-            print("Do you want search with wich options: \n1)Author\n2)ISBN\n3)Book name\n4)Exit")
-            user_choise = int(input("Enter your number : "))
-            if user_choise == 1 :
-                
-                flag = False
-                author_name = input("author name : ").strip().lower()
-                for book in self.books:
-                    if book.author == author_name:
-                        print(f"book name {book.title} and author {book.author} and ISBN is {book.isbn}")
-                        flag = True
-                    else:
-                        continue
-                else:
-                    if flag == False:
-                        print("dosent exist")
-                 
-                print("\ncontinue ? ")
-                yes_or_no = input("yes or no ? ").lower().strip()
-                if yes_or_no == "yes":
-                        continue
-                else:
-                    break
-
-            elif  user_choise == 2:
-                flag = False
-                user_isbn = input("isbn : ").strip()
-                for book in self.books:
-                    if book.isbn == user_isbn:
-                        print(f"book name {book.title} and author {book.author} and ISBN is {book.isbn}")
-                        flag = True
-                    else:
-                        continue
-                if flag == False:
-                    print("dosent exist")
-                    
-                print("\ncontinue ? ")
-                yes_or_no = input("yes or no ? ").lower().strip()
-                if yes_or_no == "yes":
-                        continue
-                else:
-                    break
-            
-            elif user_choise == 3 :
-                flag = False
-                book_name = input("book name : ").strip().lower()
-                for book in self.books:
-                    if book.title == book_name:
-                        print(f"book name {book.title} and author {book.author} and ISBN is {book.isbn}")
-                        flag = True
-                    else:
-                        continue
-                if flag == False:
-                    
-                    print("dosent exist")
-                    
-                
-                print("\ncontinue ? ")
-                yes_or_no = input("yes or no ? ").lower().strip()
-                if yes_or_no == "yes":
-                        continue
-                else:
-                    break
-            
-            elif user_choise == 4 :
-
-                break
-            else:
-                print("Invalid number")
-                continue
-        
-    def check_borrow(self):
-        flag = False
-        not_borrow = []
-        for book in self.books:
-            if book.is_borrow == False:
-                not_borrow.append(book.title)
-                flag = True
-        if flag == False:
-            text = "all book was borrowed"
-            return text
-        
-        for sh in range(len(not_borrow)):
-            print(f"{sh+1}){not_borrow[sh]}")
-        
-
-if __name__ == "__main__":
-
-    my_library = Library()
-    
-    sample_books = [
-        Book("Python Basics", "John Smith", "Programming"),
-        Book("Learning OOP", "Jane Doe", "Programming", True), 
-        Book("The Alchemist", "Paulo Coelho", "Fiction"),
-        Book("Clean Code", "Robert Martin", "Programming"),
-        Book("1984", "George Orwell", "Fiction"),
-        Book("Sapiens", "Yuval Harari", "History"),
-        Book("mio", "Yuval Harari", "History"),
-        Book("mio", "Yuval Harari", "History"),
-    ]
-    
-
-    for book in sample_books:
-        my_library.add_books(book)
-    
-    print("=" * 50)
-    print("LIBRARY MANAGEMENT SYSTEM")
-    print("=" * 50)
-    
-    my_library.show_books()
-    
-    my_library.check_isbn()
-    
-    my_library.search()
-    
-    print("\n" + "=" * 50)
-    print("BORROWING SECTION")
-    print("=" * 50)
-    my_library.check_borrow()
-    
+    def add_user(self,user):
+        letters = "".join(random.choices(string.ascii_letters,k=10))
+        self.users[letters] = user 
+        return self.users
 
 
 
+lab = Library()
+
+b = Book("Harry Potter","J.K. Rowling","Story")
+a = Book("fantastic beats","J.K. Rowling","Story")
+
+while True:
+    print("1)add_book\n2)show_book\n3)remove_book\n4)Exit")
+
+    user_choise = int(input("Enter your choise: "))
+    if user_choise == 1:
+        lab.add_book(a)
+        lab.add_book(b)
+        print("\ncontinue:  ")
+        yes_or_no = input("yes or no ? ").lower().strip()
+        if yes_or_no == "yes":
+            continue
+        else:
+            break
+    elif user_choise == 2:
+        lab.show_books()
+        print("\ncontinue:  ")
+        yes_or_no = input("yes or no ? ").lower().strip()
+        if yes_or_no == "yes":
+            continue
+        else:
+            break
+    elif user_choise == 3 :
+        book_id = input("Enter book_id: ").strip()
+        lab.remove_book(book_id)
+        print("\ncontinue:  ")
+        yes_or_no = input("yes or no ? ").lower().strip()
+        if yes_or_no == "yes":
+            continue
+        else:
+            break
+    elif user_choise == 4 :
+        break
+    else:
+        continue
 
 
-   
