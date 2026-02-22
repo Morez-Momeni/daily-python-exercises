@@ -21,7 +21,7 @@ Each problem lives in its own folder, named with a three‑digit index and a sho
 | 1 | 2025-02-14 | Find Second Highest    | Easy       | [solution.py](001_find_second_highest/solution.py) |
 | 2 | 2025-02-15 | Factorial (Recursion & Iteration) | Easy | [solution.py](002_factorial/solution.py) |
 | 3 | 2026-02-16 | Filter Palindromes      | Easy       | [solution.py](003_filter_palindromes/solution.py) |
-| 4 | 2026-02-16 | Somple Library Management System  | Medium     | [solution.py](004_library_management/solution.py) |
+| 4 | 2026-02-16 | Simple Library Management System  | Medium     | [solution.py](004_library_management/solution.py) |
 | 5 | 2026-02-17 | Check anagram strings  | Easy     | [solution.py](005_check_anagram/solution.py) |
 | 6 | 2026-02-18 | Flatten Nested List   | Medium     | [solution.py](006_flatten_nested_list/solution.py) |
 | 7 | 2026-02-19 | Find Common Elements             | Easy       | [solution.py](007_find_common_elements/solution.py) |
