@@ -27,7 +27,7 @@ Each problem lives in its own folder, named with a three‑digit index and a sho
 | 7 | 2026-02-19 | Find Common Elements             | Easy       | [solution.py](007_find_common_elements/solution.py) |
 | 8 | 2026-02-20 | Find Words in a String          | Medium     | [solution.py](008_words_in_string/solution.py) |
 | 9 | 2026-02-21 | most repeated char in a String          | Easy     | [solution.py](009_most_repeated_character/solution.py) |
-
+|10 | 2026-02-22 | Merge Two Dictionaries          | Easy       | [solution.py](010_merge_dictionaries/solution.py) |
 
 --- 
 
