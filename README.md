@@ -28,7 +28,7 @@ Each problem lives in its own folder, named with a three‑digit index and a sho
 | 8 | 2026-02-20 | Find Words in a String          | Medium     | [solution.py](008_words_in_string/solution.py) |
 | 9 | 2026-02-21 | most repeated char in a String          | Easy     | [solution.py](009_most_repeated_character/solution.py) |
 |10 | 2026-02-22 | Merge Two Dictionaries          | Easy       | [solution.py](010_merge_dictionaries/solution.py) |
-
+|11 | 2026-02-23 | Check All Alphabet Letters      | Easy       | [solution.py](011_all_character_in_string/solution.py) |
 --- 
 
 ## A Note on Continuous Improvement
