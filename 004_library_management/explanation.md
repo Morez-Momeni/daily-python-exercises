@@ -8,18 +8,20 @@ A simple, modular library management system built with Python. This project demo
 
 - Dictionary‑based storage with auto‑generated IDs.
 
-- A basic CLI menu to add, view, and remove books.
+- A basic CLI menu to add, view, and remove books and users.
 
+> (2026‑02‑23) – now includes full user management
 ---
 
 ## Features 
 
-- **Add books** – Pre‑defined books are added to the library, each receiving a random 10‑character ID.
-- **Show books** – Display all books with their IDs and titles.
-- **Remove books** – Delete a book by its ID.
-- **User management** – User class exists and can be added to the library (but not yet integrated into the menu).
-
-- **Modular design** – Book and User are in separate files for better organisation and reusability.
+- **Add books** 
+- **Show books** 
+- **Remove books** 
+- **Add users** 
+- **Show users** 
+- **Remove users** 
+- **Modular design**  
 
 ---
 ## How to Run
@@ -30,8 +32,21 @@ A simple, modular library management system built with Python. This project demo
 python main.py
 
 ```
+---
+## Class Design (Library)
+
+| # | Method       | Description                | 
+|---|------------|------------------------|
+| 1 | __init__() | Initialises empty dictionaries for books and users.    |      
+| 2 | add_book(book) | Adds a book with a random ID. |
+| 3 | remove_book(code) | Removes a book by its ID (safe existence check). |
+| 4 | show_books() | Prints all books with their IDs and titles. |
+| 5 | add_user(user) | Adds a user with a random ID. |
+| 6 | remove_user(code) | Removes a user by ID. |
+| 7 | show_users()| Prints all users with their IDs and names. |
+
 
 ---
 
 **This is simple version** – a working prototype that will be improved over time as I learn more.
-> (Updated: 2026-02-22) 
+> (Updated: 2026-02-23) 

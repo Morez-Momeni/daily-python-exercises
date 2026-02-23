@@ -4,7 +4,7 @@ Date: 2026-02-22
 
 A simple library management system using modular design.
 Books and Users are stored in dictionaries with auto-generated IDs.
-Interactive menu allows adding, showing, and removing books.
+Interactive menu allows adding, showing, and removing books and users.
 """
 
 from books import Book
@@ -36,8 +36,8 @@ class Library :
 
     def show_books(self):
 
-        for i,j in self.books.items():
-            print(f"id: {i}, name: {j.title}")
+        for id,name in self.books.items():
+            print(f"id: {id}, name: {name.title}")
 
 
     def add_user(self,user):
@@ -45,28 +45,47 @@ class Library :
         self.users[letters] = user 
         return self.users
 
+    def remove_user(self,code):
+        
+        if self.users.get(code):
+            self.users.pop(code)
+            
+        return self.users
+
+    def show_users(self):
+
+        for id,name in self.users.items():
+            print(f"id: {id}, name: {name.name}")
+    
+
+
 
 
 lab = Library()
 
 b = Book("Harry Potter","J.K. Rowling","Story")
 a = Book("fantastic beats","J.K. Rowling","Story")
+u = User("morez","momeni",22,213213)
+c = User("mohammad","momeni",22,214214)
 
 while True:
-    print("1)add_book\n2)show_book\n3)remove_book\n4)Exit")
-
+    print('='*20)
+    print("1)Add_book\n2)Show_book\n3)Remove_book\n4)Add_user\n5)Show_user\n6)Remove_user\n7)Exit")
+    print('='*20)
     user_choise = int(input("Enter your choise: "))
-    if user_choise == 1:
+    if user_choise == 1 :
         lab.add_book(a)
         lab.add_book(b)
+        print('='*20)
         print("\ncontinue:  ")
         yes_or_no = input("yes or no ? ").lower().strip()
         if yes_or_no == "yes":
             continue
         else:
             break
-    elif user_choise == 2:
+    elif user_choise == 2 :
         lab.show_books()
+        print('='*20)
         print("\ncontinue:  ")
         yes_or_no = input("yes or no ? ").lower().strip()
         if yes_or_no == "yes":
@@ -74,8 +93,10 @@ while True:
         else:
             break
     elif user_choise == 3 :
+        print('='*20)
         book_id = input("Enter book_id: ").strip()
         lab.remove_book(book_id)
+        print('='*20)
         print("\ncontinue:  ")
         yes_or_no = input("yes or no ? ").lower().strip()
         if yes_or_no == "yes":
@@ -83,6 +104,37 @@ while True:
         else:
             break
     elif user_choise == 4 :
+        lab.add_user(u)
+        lab.add_user(c)
+        print('='*20)
+        print("\ncontinue:  ")
+        yes_or_no = input("yes or no ? ").lower().strip()
+        if yes_or_no == "yes":
+            continue
+        else:
+            break
+    elif user_choise == 5 :
+        lab.show_users()
+        print('='*20)
+        print("\ncontinue:  ")
+        yes_or_no = input("yes or no ? ").lower().strip()
+        if yes_or_no == "yes":
+            continue
+        else:
+            break
+        
+    elif user_choise == 6 :
+        print('='*20)
+        user_id = input("Enter user_id: ").strip()
+        lab.remove_user(user_id)
+        print('='*20)
+        print("\ncontinue:  ")
+        yes_or_no = input("yes or no ? ").lower().strip()
+        if yes_or_no == "yes":
+            continue
+        else:
+            break
+    elif user_choise == 7:
         break
     else:
         continue
