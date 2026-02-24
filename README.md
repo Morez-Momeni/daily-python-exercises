@@ -30,6 +30,7 @@ Each problem lives in its own folder, named with a three‑digit index and a sho
 |10 | 2026-02-22 | Merge Two Dictionaries          | Easy       | [solution.py](010_merge_dictionaries/solution.py) |
 |11 | 2026-02-23 | Check All Alphabet Letters      | Easy       | [solution.py](011_all_character_in_string/solution.py) |
 |12 | 2026-02-24 | Validate IPv4 Address           | Easy       | [solution.py](012_valid_ipv4/solution.py) |
+|13 | 2026-02-24 | Cipher tool      | Medium       | [solution.py](013_cipher_tool/solution.py) |
 
 --- 
 
