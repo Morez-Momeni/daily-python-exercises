@@ -11,7 +11,7 @@ from books import Book
 from users import User
 import random
 import string
-
+import os
 
 
 class Library :
@@ -57,7 +57,17 @@ class Library :
         for id,name in self.users.items():
             print(f"id: {id}, name: {name.name}")
     
-
+    def search(self,name_book):
+        flag = False
+        for book in self.books.values():
+            if book.title == name_book:
+                flag = True
+        if flag == False:
+            return f"{name_book} dosent exists"
+        return flag
+                
+                
+        
 
 
 
@@ -70,7 +80,7 @@ c = User("mohammad","momeni",22,214214)
 
 while True:
     print('='*20)
-    print("1)Add_book\n2)Show_book\n3)Remove_book\n4)Add_user\n5)Show_user\n6)Remove_user\n7)Exit")
+    print("1)Add_book\n2)Show_book\n3)Remove_book\n4)Add_user\n5)Show_user\n6)Remove_user\n7)Search\n8)Exit")
     print('='*20)
     user_choise = int(input("Enter your choise: "))
     if user_choise == 1 :
@@ -80,6 +90,7 @@ while True:
         print("\ncontinue:  ")
         yes_or_no = input("yes or no ? ").lower().strip()
         if yes_or_no == "yes":
+            os.system("cls")
             continue
         else:
             break
@@ -89,6 +100,7 @@ while True:
         print("\ncontinue:  ")
         yes_or_no = input("yes or no ? ").lower().strip()
         if yes_or_no == "yes":
+            os.system("cls")
             continue
         else:
             break
@@ -100,6 +112,7 @@ while True:
         print("\ncontinue:  ")
         yes_or_no = input("yes or no ? ").lower().strip()
         if yes_or_no == "yes":
+            os.system("cls")
             continue
         else:
             break
@@ -110,6 +123,7 @@ while True:
         print("\ncontinue:  ")
         yes_or_no = input("yes or no ? ").lower().strip()
         if yes_or_no == "yes":
+            os.system("cls")
             continue
         else:
             break
@@ -119,6 +133,7 @@ while True:
         print("\ncontinue:  ")
         yes_or_no = input("yes or no ? ").lower().strip()
         if yes_or_no == "yes":
+            os.system("cls")
             continue
         else:
             break
@@ -131,11 +146,25 @@ while True:
         print("\ncontinue:  ")
         yes_or_no = input("yes or no ? ").lower().strip()
         if yes_or_no == "yes":
+            os.system("cls")
             continue
         else:
             break
-    elif user_choise == 7:
+    elif user_choise == 7 :
+        book_name = input("Enter book name: ").lower().strip()
+        print(lab.search(book_name))
+        print('='*20)
+        print("\ncontinue:  ")
+        yes_or_no = input("yes or no ? ").lower().strip()
+        if yes_or_no == "yes":
+            os.system("cls")
+            continue
+        else:
+            break
+    
+    elif user_choise == 8 :
         break
+    
     else:
         continue
 
