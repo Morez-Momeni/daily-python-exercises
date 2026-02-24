@@ -34,16 +34,16 @@ A simple, modular library management system built with Python. This project demo
 python main.py
 
 ```
-3. Use the numbered menu to:
-1. Add books – enter the number of books and their details.
-2. Show all books.
-3. Remove a book by ID.
-4. Add users – enter the number of users and their details.
-5. Show all users.
-6. Remove a user by ID.
-7. Search for a book by title. 
-8. Borrow a book by ID
-9. Exit the program
+- Use the numbered menu to:
+- Add books – enter the number of books and their details.
+- Show all books.
+- Remove a book by ID.
+- Add users – enter the number of users and their details.
+- Show all users.
+- Remove a user by ID.
+- Search for a book by title. 
+- Borrow a book by ID
+- Exit the program
 > After each action, you can choose to continue (screen clears) or exit
 
 ---
