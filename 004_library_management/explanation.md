@@ -20,7 +20,8 @@ A simple, modular library management system built with Python. This project demo
 - **Remove books** 
 - **Add users** 
 - **Show users** 
-- **Remove users** 
+- **Remove users**
+- **Search books** 
 - **Modular design**  
 
 ---

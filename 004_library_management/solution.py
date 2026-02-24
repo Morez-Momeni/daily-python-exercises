@@ -73,19 +73,21 @@ class Library :
 
 lab = Library()
 
-b = Book("Harry Potter","J.K. Rowling","Story")
-a = Book("fantastic beats","J.K. Rowling","Story")
-u = User("morez","momeni",22,213213)
-c = User("mohammad","momeni",22,214214)
-
 while True:
     print('='*20)
     print("1)Add_book\n2)Show_book\n3)Remove_book\n4)Add_user\n5)Show_user\n6)Remove_user\n7)Search\n8)Exit")
     print('='*20)
     user_choise = int(input("Enter your choise: "))
     if user_choise == 1 :
-        lab.add_book(a)
-        lab.add_book(b)
+        add_book_number = int(input("Enter number of book you want add: "))
+        for un in range(add_book_number):
+            title = input(f"{un+1})Book name: ")
+            author = input(f"{un+1})Author name: ")
+            category = input(f"{un+1})Category: ")
+            book = Book(title,author,category)
+            lab.add_book(book)
+            print('='*20)
+        
         print('='*20)
         print("\ncontinue:  ")
         yes_or_no = input("yes or no ? ").lower().strip()
@@ -117,8 +119,15 @@ while True:
         else:
             break
     elif user_choise == 4 :
-        lab.add_user(u)
-        lab.add_user(c)
+        add_user_number = int(input("Enter number of user you want add: "))
+        for un in range(add_user_number):
+            name = input(f"{un+1})User name: ")
+            lastname = input(f"{un+1})User last-name: ")
+            age = int(input(f"{un+1})age: "))
+            n_id = int(input("Enter user national id: "))
+            user = User(name,lastname,age,n_id)
+            lab.add_user(user)
+            print('='*20)
         print('='*20)
         print("\ncontinue:  ")
         yes_or_no = input("yes or no ? ").lower().strip()
