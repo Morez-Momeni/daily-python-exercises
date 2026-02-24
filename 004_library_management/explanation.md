@@ -34,7 +34,7 @@ A simple, modular library management system built with Python. This project demo
 python main.py
 
 ```
-- Use the numbered menu to:
+3. Use the numbered menu to:
 - Add books – enter the number of books and their details.
 - Show all books.
 - Remove a book by ID.
