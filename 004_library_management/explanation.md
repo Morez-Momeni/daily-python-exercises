@@ -10,7 +10,7 @@ A simple, modular library management system built with Python. This project demo
 
 - A basic CLI menu to add, view, and remove books and users.
 
-> (2026‑02‑24) - now includes book search and screen management.
+> (2026‑02‑24) -  now includes borrowing books.
 ---
 
 ## Features 
@@ -23,6 +23,7 @@ A simple, modular library management system built with Python. This project demo
 - **Remove users**
 - **Search books** 
 - **Modular design**  
+- **Borrow books**
 
 ---
 ## How to Run
@@ -34,14 +35,15 @@ python main.py
 
 ```
 3. Use the numbered menu to:
-- 1. Add books – enter the number of books and their details.
-- 2. Show all books.
-- 3. Remove a book by ID.
-- 4. Add users – enter the number of users and their details.
-- 5. Show all users.
-- 6. Remove a user by ID.
-- 7. Search for a book by title. 
-- 8. Exit the program
+1. Add books – enter the number of books and their details.
+2. Show all books.
+3. Remove a book by ID.
+4. Add users – enter the number of users and their details.
+5. Show all users.
+6. Remove a user by ID.
+7. Search for a book by title. 
+8. Borrow a book by ID
+9. Exit the program
 > After each action, you can choose to continue (screen clears) or exit
 
 ---
@@ -57,6 +59,7 @@ python main.py
 | 6 | **remove_user(code)** | Removes a user by ID. |
 | 7 | **show_users()**| Prints all users with their IDs and names. |
 | 8 | **search(name_book)** | Returns True if a book with the given title exists, otherwise a message. |
+| 9 | **borrow(code)** | Allows a user to borrow a book by its ID. Checks availability, asks for confirmation, and updates the is_borrow flag. Returns a status message. |
 
 ---
 

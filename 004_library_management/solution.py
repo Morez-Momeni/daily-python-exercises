@@ -66,16 +66,29 @@ class Library :
             return f"{name_book} dosent exists"
         return flag
                 
-                
+    def borrow(self,code):
+        if code in self.books.keys():
+            for id,book in self.books.items():
+                if id == code :
+                    if book.is_borrow == False:
+                        print("you can bborrow it, do yo want it? ")
+                        yes_or_no = input("yes or no ? ").lower().strip()
+                        if yes_or_no == "yes" :
+                            book.is_borrow = True
+                            return f"{book.title} is yours now"
+                        else:
+                            return f"borrow canceled"
+                    else:
+                        return f"{book.title} already borrowed"            
+        else:
+            return f"{code} is invalid "
         
-
-
 
 lab = Library()
 
 while True:
     print('='*20)
-    print("1)Add_book\n2)Show_book\n3)Remove_book\n4)Add_user\n5)Show_user\n6)Remove_user\n7)Search\n8)Exit")
+    print("1)Add_book\n2)Show_book\n3)Remove_book\n4)Add_user\n5)Show_user\n6)Remove_user\n7)Search\n8)Borrow\n9)Exit")
     print('='*20)
     user_choise = int(input("Enter your choise: "))
     if user_choise == 1 :
@@ -172,6 +185,18 @@ while True:
             break
     
     elif user_choise == 8 :
+        book_id = input("Enter book id: ")
+        print(lab.borrow(book_id))
+        print('='*20)
+        print("\ncontinue:  ")
+        yes_or_no = input("yes or no ? ").lower().strip()
+        if yes_or_no == "yes":
+            os.system("cls")
+            continue
+        else:
+            break
+    
+    elif user_choise == 9 :
         break
     
     else:
