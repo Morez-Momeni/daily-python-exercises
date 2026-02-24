@@ -26,13 +26,24 @@ A simple, modular library management system built with Python. This project demo
 
 ---
 ## How to Run
-- Place main.py, books.py, and users.py in the same folder.
-- Run the main script:
+1. Place main.py, books.py, and users.py in the same folder.
+2. Run the main script:
 
 ``` python
 python main.py
 
 ```
+3. Use the numbered menu to:
+- 1. Add books – enter the number of books and their details.
+- 2. Show all books.
+- 3. Remove a book by ID.
+- 4. Add users – enter the number of users and their details.
+- 5. Show all users.
+- 6. Remove a user by ID.
+- 7. Search for a book by title. 
+- 8. Exit the program
+> After each action, you can choose to continue (screen clears) or exit
+
 ---
 ## Class Design (Library)
 
