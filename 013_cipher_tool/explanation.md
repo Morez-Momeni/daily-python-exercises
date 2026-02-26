@@ -41,12 +41,16 @@ The tool features a modular design, with each cipher in its own module, and an i
 ## How to Run
 1. Ensure all files are in the correct folder structure.
 2. Install the `rich` library if not already installed:
+
    ```bash
+
    pip install rich
 
    ```
 3. Run the main script:
+
     ```python
+
     python solution.py
 
     ```
@@ -54,9 +58,9 @@ The tool features a modular design, with each cipher in its own module, and an i
 ## Example Usage
 - **Caesar**
 
-    Input: "Hello" with shift 3 → Output: "Khoor"
+    - Input: "Hello" with shift 3 → Output: "Khoor"
 
-    Input: "Khoor" with shift 3 → Output: "Hello"
+    - Input: "Khoor" with shift 3 → Output: "Hello"
 
 - **Atbash**
 
