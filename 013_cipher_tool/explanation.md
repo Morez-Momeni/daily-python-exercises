@@ -1,48 +1,71 @@
-# Project 13: Cipher Tool – Caesar Cipher (CLI)
+# Project 13: Cipher Tool (Caesar & Atbash)
 
 ## Project Overview
-This is a simple command‑line tool for encryption/decryption using the **Caesar cipher**. It is the first part of a larger cipher toolkit that will eventually include Atbash and Vigenère. The project demonstrates:
-- Modular design (cipher logic in a separate module).
-- Interactive menu with submenus using the `rich` library.
-- Proper handling of uppercase/lowercase letters and non‑alphabetic characters.
-- Adjustable shift value.
+This is a command-line tool that implements two classic ciphers:
+- **Caesar cipher** 
+- **Atbash cipher** 
 
-**Current Version:**  (Caesar only) – 2026‑02‑25
+The tool features a modular design, with each cipher in its own module, and an interactive menu built with the `rich` library for a polished terminal experience.
 
+**Current Version:** (2026-02-26) – now includes Atbash cipher.
 ---
 
 ## Features
-- **Caesar cipher** with a user‑defined shift (default 3).
-- **Encode** any text – only letters are shifted; numbers, punctuation, and spaces remain unchanged.
-- **Decode** any text – reverse the shift.
-- **Change shift** at runtime.
-- Clean, colourful terminal interface using `rich`.
-- Modular structure – easy to add new ciphers later.
-
+- **Caesar cipher**
+  - Encode/decode any text with adjustable shift.
+  - Shift can be changed at runtime.
+  - Handles uppercase and lowercase letters separately.
+- **Atbash cipher**
+  - Encode/decode using the reverse alphabet mapping.
+  - Since Atbash is symmetric, encode and decode are identical.
+- **Interactive menu** with submenus for each cipher.
+- **Modular design** – each cipher is in its own Python file.
 
 
 ---
 
-## Class Design (`Caesar` in `caesar.py`)
+## Cipher Implementations
 
-| Attribute / Method | Description |
-|---------------------|-------------|
-| `__shift`           | Current shift value (private). |
-| `__letters_lower`   | String `'abcdefghijklmnopqrstuvwxyz'`. |
-| `__letters_upper`   | String `'ABCDEFGHIJKLMNOPQRSTUVWXYZ'`. |
-| `encode(text)`      | Returns the encrypted version of `text`. |
-| `decode(text)`      | Returns the decrypted version of `text`. |
-| `change_shift(new)` | Updates the shift. |
+### Caesar (`caesar.py`)
+- Class `Caesar` with `__shift` (private).
+- Uses `string.ascii_lowercase` and `string.ascii_uppercase`.
+- Encode: `(position + shift) % 26`
+- Decode: `(position - shift) % 26`
 
-**How it works:**
-- For each character, check if it is uppercase, lowercase, or neither.
-- If it's a letter, find its position in the corresponding alphabet string using `.find()`.
-- Add (or subtract) the shift, take modulo 26 to wrap around, and look up the resulting letter.
-- Non‑letters are appended unchanged.
+### Atbash (`atbash.py`)
+- Class `Atbash` with four private strings representing the first and second halves of the alphabet (both uppercase and lowercase).
+- For each character, it checks which half it belongs to and maps it to the corresponding character in the opposite half.
+- Since Atbash is self‑inverse, `decode()` simply calls `encode()`.
+
+---
+## How to Run
+1. Ensure all files are in the correct folder structure.
+2. Install the `rich` library if not already installed:
+   ```bash
+   pip install rich
+
+   ```
+3. Run the main script:
+    ```python
+    python solution.py
+
+    ```
+---
+## Example Usage
+- **Caesar**
+
+    Input: "Hello" with shift 3 → Output: "Khoor"
+
+    Input: "Khoor" with shift 3 → Output: "Hello"
+
+- **Atbash**
+
+    - Input: "Hello" → Output: "Svool"
+
+    - Input: "Svool" → Output: "Hello"
 
 ---
 
 ##  Future Improvements
-- Add Atbash cipher
 - Add Vigenère cipher
 
