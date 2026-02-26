@@ -32,6 +32,7 @@ Each problem lives in its own folder, named with a three‑digit index and a sho
 |12 | 2026-02-24 | Validate IPv4 Address           | Easy       | [solution.py](012_valid_ipv4/solution.py) |
 |13 | 2026-02-24 | Cipher tool      | Medium       | [solution.py](013_cipher_tool/solution.py) |
 |14 | 2026-02-25 | Mean, Median, Mode (manual)     | Easy       | [solution.py](014_mean_median_mode/solution.py) |
+|15 | 2026-02-26 | Fibonacci Number (iterative)    | Easy       | [solution.py](015_fibonacci/solution.py) |
 
 --- 
 

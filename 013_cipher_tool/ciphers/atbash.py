@@ -1,0 +1,2 @@
+class Atbash:
+    pass
