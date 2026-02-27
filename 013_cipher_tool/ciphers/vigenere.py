@@ -76,7 +76,3 @@ class Vigenere:
         return self.__key
         
     
-v = Vigenere()
-print(v.encode("HELLO!"))
-z = v.encode("hello!")
-print(v.decode(z))
