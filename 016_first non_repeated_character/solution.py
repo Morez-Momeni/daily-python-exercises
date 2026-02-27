@@ -1,5 +1,5 @@
 """
-Problem #18: Find the First Non-Repeated Character in a String
+Problem #16: Find the First Non-Repeated Character in a String
 
 
 Write a function that returns the first character that appears only once.
