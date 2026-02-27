@@ -34,7 +34,7 @@ Each problem lives in its own folder, named with a three‑digit index and a sho
 |14 | 2026-02-25 | Mean, Median, Mode (manual)     | Easy       | [solution.py](014_mean_median_mode/solution.py) |
 |15 | 2026-02-26 | Fibonacci Number (iterative)    | Easy       | [solution.py](015_fibonacci/solution.py) |
 |16 | 2026-02-27 | First Non‑Repeated Character      |  Easy      | [solution.py](016_first_non_repeated_character/solution.py) |
-
+|17 | 2026-02-28 | Check String Rotation           | Easy       | [solution.py](017_check_strings_rotations/solution.py) |
 --- 
 
 ## A Note on Continuous Improvement
