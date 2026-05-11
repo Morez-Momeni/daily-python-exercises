@@ -35,6 +35,10 @@ Each problem lives in its own folder, named with a three‑digit index and a sho
 |15 | 2026-02-26 | Fibonacci Number (iterative)    | Easy       | [solution.py](015_fibonacci/solution.py) |
 |16 | 2026-02-27 | First Non‑Repeated Character      |  Easy      | [solution.py](016_first_non_repeated_character/solution.py) |
 |17 | 2026-02-28 | Check String Rotation           | Easy       | [solution.py](017_check_strings_rotations/solution.py) |
+|18 | 2026-02-29 | Check all character unique           | Easy       | [solution.py](018_all_char_unique/solution.py) |
+|19 | 2026-05-11 | rock-paper-siccors           | Easy       | [solution.py](019_rock_paper_siccors/solution.py) |
+|20 | 2026-05-11 | move zeros to end           | Easy       | [solution.py](20_move_zeros_to_end/solution.py) |
+
 --- 
 
 ## A Note on Continuous Improvement
