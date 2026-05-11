@@ -1,6 +1,6 @@
 # daily-python-exercises
 
-One Python exercise, for 21 days. This repository is a personal log of consistent practice — solving small problems, writing clean code, and documenting the thought process. No perfectionism, just progress.
+One Python exercise, every days. This repository is a personal log of consistent practice — solving small problems, writing clean code, and documenting the thought process. No perfectionism, just progress.
 
 
 ---
