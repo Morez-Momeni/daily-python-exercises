@@ -1,10 +1,13 @@
 # daily-python-exercises
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-Daily_Practice-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Status-Consistent_Grinding-00C853?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Focus-1%20Exercise%20Daily-00E676?style=for-the-badge"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:00c853&height=220&section=header&text=Morez%20|%20Python%20Daily%20Practice&fontSize=38&fontColor=ffffff&animation=fadeIn" />
 </p>
----
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Discipline-Non_Negotiable-00C853?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Consistency-Compounds_Daily-2E7D32?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Focus-Execution_Over_Motivation-1B5E20?style=for-the-badge"/>
+</p>
 
 One Python exercise per day.  
 This repository is a personal log of consistent practice — solving small problems, writing clean code, and documenting the thought process.  
