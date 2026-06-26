@@ -1,4 +1,15 @@
 # daily-python-exercises
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-Daily_Practice-2ea44f?style=for-the-badge&logo=python&logoColor=white"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Consistency-Over_Perfection-1f883d?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Exercises-21%2B-2ea44f?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Status-Active_Series-238636?style=flat-square"/>
+</p>
+
+---
 
 One Python exercise per day.  
 This repository is a personal log of consistent practice — solving small problems, writing clean code, and documenting the thought process.  
@@ -42,6 +53,10 @@ Each problem lives in its own folder, named with a three-digit index and a short
 |20 | 2026-05-11 | Move Zeros to End                    | Easy       | [solution.py](020_move_zeros_to_end/solution.py) |
 |21 | 2026-06-26 | Contact Management System (CLI)      | Medium     | [solution.py](021_contact_management/solution.py) |
 ---
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Made_with-Discipline-238636?style=for-the-badge"/>
+</p>
 
 ## A Note on Continuous Improvement
 
