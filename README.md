@@ -1,47 +1,51 @@
 # daily-python-exercises
 
-One Python exercise, for 21 days. This repository is a personal log of consistent practice — solving small problems, writing clean code, and documenting the thought process. No perfectionism, just progress.
-
+One Python exercise per day.  
+This repository is a personal log of consistent practice — solving small problems, writing clean code, and documenting the thought process.  
+No perfectionism, just progress.
 
 ---
 
 ## Structure
 
-Each problem lives in its own folder, named with a three‑digit index and a short description:
+Each problem lives in its own folder, named with a three-digit index and a short description:
 
 | Folder | Files |
 |------------------|-------|
-| `001_problem_name/` | `solution.py` , `explanation.md` |
+| `001_problem_name/` | `solution.py`, `explanation.md` |
 
 ---
 
 ## Progress
-| # | Date       | Problem                | Difficulty | Solution                                     |
-|---|------------|------------------------|------------|----------------------------------------------|
-| 1 | 2025-02-14 | Find Second Highest    | Easy       | [solution.py](001_find_second_highest/solution.py) |
-| 2 | 2025-02-15 | Factorial (Recursion & Iteration) | Easy | [solution.py](002_factorial/solution.py) |
-| 3 | 2026-02-16 | Filter Palindromes      | Easy       | [solution.py](003_filter_palindromes/solution.py) |
-| 4 | 2026-02-16 | Simple Library Management System  | Medium     | [solution.py](004_library_management/solution.py) |
-| 5 | 2026-02-17 | Check anagram strings  | Easy     | [solution.py](005_check_anagram/solution.py) |
-| 6 | 2026-02-18 | Flatten Nested List   | Medium     | [solution.py](006_flatten_nested_list/solution.py) |
-| 7 | 2026-02-19 | Find Common Elements             | Easy       | [solution.py](007_find_common_elements/solution.py) |
-| 8 | 2026-02-20 | Find Words in a String          | Medium     | [solution.py](008_words_in_string/solution.py) |
-| 9 | 2026-02-21 | most repeated char in a String          | Easy     | [solution.py](009_most_repeated_character/solution.py) |
-|10 | 2026-02-22 | Merge Two Dictionaries          | Easy       | [solution.py](010_merge_dictionaries/solution.py) |
-|11 | 2026-02-23 | Check All Alphabet Letters      | Easy       | [solution.py](011_all_character_in_string/solution.py) |
-|12 | 2026-02-24 | Validate IPv4 Address           | Easy       | [solution.py](012_valid_ipv4/solution.py) |
-|13 | 2026-02-24 | Cipher tool      | Medium       | [solution.py](013_cipher_tool/solution.py) |
-|14 | 2026-02-25 | Mean, Median, Mode (manual)     | Easy       | [solution.py](014_mean_median_mode/solution.py) |
-|15 | 2026-02-26 | Fibonacci Number (iterative)    | Easy       | [solution.py](015_fibonacci/solution.py) |
-|16 | 2026-02-27 | First Non‑Repeated Character      |  Easy      | [solution.py](016_first_non_repeated_character/solution.py) |
-|17 | 2026-02-28 | Check String Rotation           | Easy       | [solution.py](017_check_strings_rotations/solution.py) |
-|18 | 2026-02-29 | Check all character unique           | Easy       | [solution.py](018_all_char_unique/solution.py) |
-|19 | 2026-05-11 | rock-paper-siccors           | Easy       | [solution.py](019_rock_paper_siccors/solution.py) |
-|20 | 2026-05-11 | move zeros to end           | Easy       | [solution.py](20_move_zeros_to_end/solution.py) |
 
---- 
+| # | Date       | Problem                              | Difficulty | Solution |
+|---|------------|--------------------------------------|------------|----------|
+| 1 | 2025-02-14 | Find Second Highest                  | Easy       | [solution.py](001_find_second_highest/solution.py) |
+| 2 | 2025-02-15 | Factorial (Recursion & Iteration)    | Easy       | [solution.py](002_factorial/solution.py) |
+| 3 | 2026-02-16 | Filter Palindromes                   | Easy       | [solution.py](003_filter_palindromes/solution.py) |
+| 4 | 2026-02-16 | Simple Library Management System     | Medium     | [solution.py](004_library_management/solution.py) |
+| 5 | 2026-02-17 | Check Anagram Strings                | Easy       | [solution.py](005_check_anagram/solution.py) |
+| 6 | 2026-02-18 | Flatten Nested List                  | Medium     | [solution.py](006_flatten_nested_list/solution.py) |
+| 7 | 2026-02-19 | Find Common Elements                 | Easy       | [solution.py](007_find_common_elements/solution.py) |
+| 8 | 2026-02-20 | Find Words in a String               | Medium     | [solution.py](008_words_in_string/solution.py) |
+| 9 | 2026-02-21 | Most Repeated Character in a String  | Easy       | [solution.py](009_most_repeated_character/solution.py) |
+|10 | 2026-02-22 | Merge Two Dictionaries               | Easy       | [solution.py](010_merge_dictionaries/solution.py) |
+|11 | 2026-02-23 | Check All Alphabet Letters           | Easy       | [solution.py](011_all_character_in_string/solution.py) |
+|12 | 2026-02-24 | Validate IPv4 Address                | Easy       | [solution.py](012_valid_ipv4/solution.py) |
+|13 | 2026-02-24 | Cipher Tool                          | Medium     | [solution.py](013_cipher_tool/solution.py) |
+|14 | 2026-02-25 | Mean, Median, Mode (Manual)          | Easy       | [solution.py](014_mean_median_mode/solution.py) |
+|15 | 2026-02-26 | Fibonacci Number (Iterative)         | Easy       | [solution.py](015_fibonacci/solution.py) |
+|16 | 2026-02-27 | First Non-Repeated Character         | Easy       | [solution.py](016_first_non_repeated_character/solution.py) |
+|17 | 2026-02-28 | Check String Rotation                | Easy       | [solution.py](017_check_strings_rotations/solution.py) |
+|18 | 2026-02-29 | Check All Characters Unique          | Easy       | [solution.py](018_all_char_unique/solution.py) |
+|19 | 2026-05-11 | Rock Paper Scissors                  | Easy       | [solution.py](019_rock_paper_siccors/solution.py) |
+|20 | 2026-05-11 | Move Zeros to End                    | Easy       | [solution.py](020_move_zeros_to_end/solution.py) |
+
+---
 
 ## A Note on Continuous Improvement
 
-All solutions in this repository are continuously **reviewed** and enhanced. While each exercise presents a **working solution**, it may not yet handle every edge case or be fully optimized. As I learn more about error handling, performance, and best practices, these solutions will evolve — future versions will address edge cases, add input validation, and refine performance.
+All solutions in this repository are continuously reviewed and improved.  
+While each exercise includes a working solution, it may not yet handle all edge cases or be fully optimized.
 
+As my understanding of Python, performance considerations, and best practices grows, earlier solutions may be refactored to improve readability, robustness, and efficiency.
