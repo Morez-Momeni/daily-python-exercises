@@ -60,3 +60,7 @@ All solutions in this repository are continuously reviewed and improved.
 While each exercise includes a working solution, it may not yet handle all edge cases or be fully optimized.
 
 As my understanding of Python, performance considerations, and best practices grows, earlier solutions may be refactored to improve readability, robustness, and efficiency.
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00c853,100:0d1117&height=160&section=footer&text=Thanks%20for%20visiting%20Morez&fontSize=28&fontColor=ffffff&animation=fadeIn" />
+</p>
