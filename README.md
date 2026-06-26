@@ -1,14 +1,9 @@
 # daily-python-exercises
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-Daily_Practice-2ea44f?style=for-the-badge&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Python-Daily_Practice-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Status-Consistent_Grinding-00C853?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Focus-1%20Exercise%20Daily-00E676?style=for-the-badge"/>
 </p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Consistency-Over_Perfection-1f883d?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Exercises-21%2B-2ea44f?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Status-Active_Series-238636?style=flat-square"/>
-</p>
-
 ---
 
 One Python exercise per day.  
@@ -54,9 +49,7 @@ Each problem lives in its own folder, named with a three-digit index and a short
 |21 | 2026-06-26 | Contact Management System (CLI)      | Medium     | [solution.py](021_contact_management/solution.py) |
 ---
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Made_with-Discipline-238636?style=for-the-badge"/>
-</p>
+
 
 ## A Note on Continuous Improvement
 
