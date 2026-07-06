@@ -50,6 +50,7 @@ Each problem lives in its own folder, named with a three-digit index and a short
 |19 | 2026-05-11 | Rock Paper Scissors                  | Easy       | [solution.py](019_rock_paper_siccors/solution.py) |
 |20 | 2026-05-11 | Move Zeros to End                    | Easy       | [solution.py](020_move_zeros_to_end/solution.py) |
 |21 | 2026-06-26 | Contact Management System (CLI)      | Medium     | [solution.py](021_contact_management/solution.py) |
+|22 | 2026-07-06 | Smallest Missing Positive  | Medium | [solution.py](022_smallest_missing_positive/solution.py) |
 ---
 
 
