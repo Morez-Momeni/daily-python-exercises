@@ -52,6 +52,7 @@ Each problem lives in its own folder, named with a three-digit index and a short
 |21 | 2026-06-26 | Contact Management System (CLI)      | Medium     | [solution.py](021_contact_management/solution.py) |
 |22 | 2026-07-06 | Smallest Missing Positive  | Medium | [solution.py](022_smallest_missing_positive/solution.py) |
 |23 | 2026-08-07 | Perfect Number Checker          | Easy       | [solution.py](021_perfect_number/solution.py) |
+|24 | 2026-08-08 | Atbash Cipher          | Easy       | [solution.py](024_atbash_cipher/solution.py) |
 ---
 
 
