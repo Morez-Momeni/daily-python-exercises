@@ -53,6 +53,7 @@ Each problem lives in its own folder, named with a three-digit index and a short
 |22 | 2026-07-06 | Smallest Missing Positive  | Medium | [solution.py](022_smallest_missing_positive/solution.py) |
 |23 | 2026-08-07 | Perfect Number Checker          | Easy       | [solution.py](021_perfect_number/solution.py) |
 |24 | 2026-08-08 | Atbash Cipher          | Easy       | [solution.py](024_atbash_cipher/solution.py) |
+|25 | 2026-08-09 | Sum of Multiples of 3 or 5      | Easy       | [solution.py](025_multiples_of_3_or_5/solution.py) |
 ---
 
 
