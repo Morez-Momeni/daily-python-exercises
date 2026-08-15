@@ -56,6 +56,7 @@ Each problem lives in its own folder, named with a three-digit index and a short
 |25 | 2026-08-09 | Sum of Multiples of 3 or 5      | Easy       | [solution.py](025_multiples_of_3_or_5/solution.py) |
 |26 | 2026-08-13 | Bingo Game         | Easy       | [solution.py](026_bingo_game/solution.py) |
 |27 | 2026-08-15 | Password Generator              | Easy       | [solution.py](027_password_generator/solution.py) |
+|28 | 2026-08-16 | Send Email via Gmail (SMTP)     | Medium     | [solution.py](025_send_email/solution.py) |
 ---
 
 
