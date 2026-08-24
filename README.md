@@ -59,6 +59,7 @@ Each problem lives in its own folder, named with a three-digit index and a short
 |28 | 2026-08-16 | Send Email via Gmail (SMTP)     | Medium     | [solution.py](028_send_email/solution.py) |
 |29 | 2026-08-17 | Implement Shuffle (Manual)      | Easy       | [solution.py](029_shuffle_implementation/solution.py) |
 |30 | 2026-08-17 | Find All Positions of a Character | Easy    | [solution.py](030_find_all_dots/solution.py) |
+|31 | 2026-08-25 | Text‑to‑Speech from a File      | Easy       | [solution.py](031_text_to_speech/solution.py) |
 ---
 
 
