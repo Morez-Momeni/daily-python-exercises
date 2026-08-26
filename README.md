@@ -61,6 +61,7 @@ Each problem lives in its own folder, named with a three-digit index and a short
 |30 | 2026-08-17 | Find All Positions of a Character | Easy    | [solution.py](030_find_all_dots/solution.py) |
 |31 | 2026-08-25 | Text‑to‑Speech from a File      | Easy       | [solution.py](031_text_to_speech/solution.py) |
 |32 | 2026-08-25 | Iranian National ID Validator   | Medium     | [solution.py](032_national_id_validator/solution.py) |
+|33 | 2026-08-26 | Numeric Key Encryption          | Easy       | [solution.py](033_numeric_key_encryption/solution.py) |
 ---
 
 
