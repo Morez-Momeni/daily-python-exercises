@@ -62,6 +62,7 @@ Each problem lives in its own folder, named with a three-digit index and a short
 |31 | 2026-08-25 | Text‑to‑Speech from a File      | Easy       | [solution.py](031_text_to_speech/solution.py) |
 |32 | 2026-08-25 | Iranian National ID Validator   | Medium     | [solution.py](032_national_id_validator/solution.py) |
 |33 | 2026-08-26 | Numeric Key Encryption          | Easy       | [solution.py](033_numeric_key_encryption/solution.py) |
+|34 | 2026-08-27 | News Reader with TTS            | Medium     | [solution.py](034_news_reader/solution.py) |
 ---
 
 
