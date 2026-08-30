@@ -63,13 +63,15 @@ Each problem lives in its own folder, named with a three-digit index and a short
 |32 | 2026-08-25 | Iranian National ID Validator   | Medium     | [solution.py](032_national_id_validator/solution.py) |
 |33 | 2026-08-26 | Numeric Key Encryption          | Easy       | [solution.py](033_numeric_key_encryption/solution.py) |
 |34 | 2026-08-27 | News Reader with TTS            | Medium     | [solution.py](034_news_reader/solution.py) |
+|35 | 2026-08-29 | GDP Data Scraper                | Medium     | [solution.py](035_gdp_scraper/solution.py) |
+|36 | 2026-08-30 | Course Scraper (Mongard)        | Medium     | [solution.py](036_course_scraper/solution.py) |
 ---
 
 
 
 ## A Note on Continuous Improvement
 
-All solutions in this repository are continuously reviewed and improved.  
+All solutions in this repository are continuously reviewed and improved.
 While each exercise includes a working solution, it may not yet handle all edge cases or be fully optimized.
 
 As my understanding of Python, performance considerations, and best practices grows, earlier solutions may be refactored to improve readability, robustness, and efficiency.
