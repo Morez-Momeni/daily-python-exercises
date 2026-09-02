@@ -65,6 +65,7 @@ Each problem lives in its own folder, named with a three-digit index and a short
 |34 | 2026-08-27 | News Reader with TTS            | Medium     | [solution.py](034_news_reader/solution.py) |
 |35 | 2026-08-29 | GDP Data Scraper                | Medium     | [solution.py](035_gdp_scraper/solution.py) |
 |36 | 2026-08-30 | Course Scraper (Mongard)        | Medium     | [solution.py](036_course_scraper/solution.py) |
+|37 | 2026-09-02 | Book Search with OpenLibrary API | Medium    | [solution.py](037_requests_method/solution.py) |
 ---
 
 
