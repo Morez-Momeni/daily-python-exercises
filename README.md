@@ -67,6 +67,7 @@ Each problem lives in its own folder, named with a three-digit index and a short
 |36 | 2026-08-30 | Course Scraper (Mongard)        | Medium     | [solution.py](036_course_scraper/solution.py) |
 |37 | 2026-09-02 | Book Search with OpenLibrary API | Medium    | [solution.py](037_requests_method/solution.py) |
 |38 | 2026-09-03 | Russian Roulette                | Easy       | [solution.py](038_russian_roulette/solution.py) |
+|39 | 2026-09-04 | Extract Fridays from a Month    | Easy       | [solution.py](039_calendar_fridays/solution.py) |
 ---
 
 
