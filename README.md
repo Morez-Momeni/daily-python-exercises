@@ -71,6 +71,7 @@ Each problem lives in its own folder, named with a three-digit index and a short
 |40 | 2026-09-06 | Automatic File Organizer        | Easy       | [solution.py](040_file_organizer/solution.py) |
 |41 | 2026-09-07 | Alarm Clock with Tkinter        | Medium     | [solution.py](041_alarm_clock/solution.py) |
 |42 | 2026-09-07 | Simple Hash Table with Chaining | Medium     | [solution.py](042_hash_table_chaining/solution.py) |
+|43 | 2026-09-07 | Hash Table with Key‑Value       | Medium     | [solution.py](043_hash_table_key_value/solution.py) |
 ---
 
 
