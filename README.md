@@ -72,6 +72,8 @@ Each problem lives in its own folder, named with a three-digit index and a short
 |41 | 2026-09-07 | Alarm Clock with Tkinter        | Medium     | [solution.py](041_alarm_clock/solution.py) |
 |42 | 2026-09-07 | Simple Hash Table with Chaining | Medium     | [solution.py](042_hash_table_chaining/solution.py) |
 |43 | 2026-09-07 | Hash Table with Key‑Value       | Medium     | [solution.py](043_hash_table_key_value/solution.py) |
+|44 | 2026-09-09 | Login Form with Tkinter         | Easy       | [solution.py](044_login_tkinter/solution.py) |
+|45 | 2026-09-09 | Multiplication Table Printer    | Easy       | [solution.py](045_multiplication_table/solution.py) |
 ---
 
 
