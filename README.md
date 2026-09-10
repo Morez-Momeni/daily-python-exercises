@@ -74,6 +74,7 @@ Each problem lives in its own folder, named with a three-digit index and a short
 |43 | 2026-09-07 | Hash Table with Key‑Value       | Medium     | [solution.py](043_hash_table_key_value/solution.py) |
 |44 | 2026-09-09 | Login Form with Tkinter         | Easy       | [solution.py](044_login_tkinter/solution.py) |
 |45 | 2026-09-09 | Multiplication Table Printer    | Easy       | [solution.py](045_multiplication_table/solution.py) |
+|46 | 2026-09-10 | Manual Push and Pop             | Easy       | [solution.py](046_push_pop_manual/solution.py) |
 ---
 
 
