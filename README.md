@@ -75,6 +75,7 @@ Each problem lives in its own folder, named with a three-digit index and a short
 |44 | 2026-09-09 | Login Form with Tkinter         | Easy       | [solution.py](044_login_tkinter/solution.py) |
 |45 | 2026-09-09 | Multiplication Table Printer    | Easy       | [solution.py](045_multiplication_table/solution.py) |
 |46 | 2026-09-10 | Manual Push and Pop             | Easy       | [solution.py](046_push_pop_manual/solution.py) |
+|47 | 2026-09-11 | Simple Music Player (Pygame)    | Easy       | [solution.py](047_play_music/solution.py) |
 ---
 
 
