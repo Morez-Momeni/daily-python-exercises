@@ -78,6 +78,7 @@ Each problem lives in its own folder, named with a three-digit index and a short
 |47 | 2026-09-11 | Simple Music Player (Pygame)    | Easy       | [solution.py](047_play_music/solution.py) |
 |48 | 2026-09-12 | Advanced Music Player (Pygame)  | Medium     | [solution.py](048_music_player_pygame/solution.py) |
 |49 | 2026-09-13 | Music Player with Tkinter GUI   | Medium     | [solution.py](049_music_player_tkinter/solution.py) |
+|50 | 2026-09-14 | Simple Linked List   | Medium     | [solution.py](050_simple_linked_list/solution.py) |
 ---
 
 
