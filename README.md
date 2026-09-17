@@ -82,6 +82,7 @@ Each problem lives in its own folder, named with a three-digit index and a short
 |51 | 2026-09-15 | Advance Singly Linked List              | Medium     | [solution.py](051_linked_list/solution.py) |
 |52 | 2026-09-16 | Terminal History Simulator      | Medium     | [solution.py](052_terminal_history_simulator/solution.py) |
 |53 | 2026-09-17 | Doubly Linked List              | Medium     | [solution.py](053_doubly_linked_list/solution.py) |
+|54 | 2026-09-17 | Package Manager Simulator       | Medium     | [solution.py](054_package_manager_simulator/solution.py) |
 ---
 
 
