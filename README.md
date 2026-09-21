@@ -84,6 +84,8 @@ Each problem lives in its own folder, named with a three-digit index and a short
 |53 | 2026-09-17 | Doubly Linked List              | Medium     | [solution.py](053_doubly_linked_list/solution.py) |
 |54 | 2026-09-17 | Package Manager Simulator       | Medium     | [solution.py](054_package_manager_simulator/solution.py) |
 |55 | 2026-09-18 | Duplicate Character Handler     | Easy       | [solution.py](055_duplicate_char_handler/solution.py) |
+|56 | 2026-09-20 | TCP Socket Chat (Server+Client) | Medium     | [server.py](056_socket_chat/server.py), [client.py](056_socket_chat/client.py) |
+|57 | 2026-09-21 | Multi‑Client Server with Logging | Medium    | [server.py](057_multi_client_socket_server/server.py), [client.py](057_multi_client_socket_server/client.py) |
 ---
 
 
