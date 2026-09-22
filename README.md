@@ -86,6 +86,7 @@ Each problem lives in its own folder, named with a three-digit index and a short
 |55 | 2026-09-18 | Duplicate Character Handler     | Easy       | [solution.py](055_duplicate_char_handler/solution.py) |
 |56 | 2026-09-20 | TCP Socket Chat (Server+Client) | Medium     | [server.py](056_socket_chat/server.py), [client.py](056_socket_chat/client.py) |
 |57 | 2026-09-21 | Multi‑Client Server with Logging | Medium    | [server.py](057_multi_client_socket_server/server.py), [client.py](057_multi_client_socket_server/client.py) |
+|58 | 2026-09-22 | Advanced Socket Server (Logging, Stats, Security) | Hard | [server.py](058_advanced_socket_server/server.py), [client.py](058_advanced_socket_server/client.py) |
 ---
 
 
