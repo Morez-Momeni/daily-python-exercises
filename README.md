@@ -88,7 +88,9 @@ Each problem lives in its own folder, named with a three-digit index and a short
 |57 | 2026-09-21 | Multi‑Client Server with Logging | Medium    | [server.py](057_multi_client_socket_server/server.py), [client.py](057_multi_client_socket_server/client.py) |
 |58 | 2026-09-22 | Advanced Socket Server (Logging, Stats, Security) | Hard | [server.py](058_advanced_socket_server/server.py), [client.py](058_advanced_socket_server/client.py) |
 |59 | 2026-09-23 | Multithreaded Socket Server     | Hard       | [server.py](059_multithreaded_socket_server/server.py), [client.py](059_multithreaded_socket_server/client.py) |
+|60 | 2026-09-25 | Connection Duration Dashboard   | Medium     | [solution.py](060_connection_dashboard/solution.py) |
 ---
+
 
 
 
