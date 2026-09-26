@@ -160,7 +160,8 @@ The complete list of exercises is maintained below.
 | 058 | 2026-09-22 | Advanced Socket Server (Logging, Stats, Security) | Hard       | [server.py](058_advanced_socket_server/server.py), [client.py](058_advanced_socket_server/client.py)           |
 | 059 | 2026-09-23 | Multithreaded Socket Server                       | Hard       | [server.py](059_multithreaded_socket_server/server.py), [client.py](059_multithreaded_socket_server/client.py) |
 | 060 | 2026-09-25 | Connection Duration Dashboard                     | Medium     | [solution.py](060_connection_dashboard/solution.py)                                                            |
-
+| 061 | 2026-09-26 | SQLite CRUD Operations                            | Easy       | [solution.py](061_sqlite_crud/solution.py)                                                                     |
+|                                                                                                                                                                                                    |
 ---
 
 ## Repository Philosophy
