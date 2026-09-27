@@ -161,7 +161,8 @@ The complete list of exercises is maintained below.
 | 059 | 2026-09-23 | Multithreaded Socket Server                       | Hard       | [server.py](059_multithreaded_socket_server/server.py), [client.py](059_multithreaded_socket_server/client.py) |
 | 060 | 2026-09-25 | Connection Duration Dashboard                     | Medium     | [solution.py](060_connection_dashboard/solution.py)                                                            |
 | 061 | 2026-09-26 | SQLite CRUD Operations                            | Easy       | [solution.py](061_sqlite_crud/solution.py)                                                                     |
-|                                                                                                                                                                                                    |
+|62   | 2026-09-27 | Build an Acronym from a Phrase                    | Easy       | [solution.py](062_build_acronym/solution.py)                                                                   |
+
 ---
 
 ## Repository Philosophy
