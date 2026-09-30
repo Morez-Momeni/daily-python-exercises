@@ -162,7 +162,8 @@ The complete list of exercises is maintained below.
 | 060 | 2026-09-25 | Connection Duration Dashboard                     | Medium     | [solution.py](060_connection_dashboard/solution.py)                                                            |
 | 061 | 2026-09-26 | SQLite CRUD Operations                            | Easy       | [solution.py](061_sqlite_crud/solution.py)                                                                     |
 | 062 | 2026-09-27 | Build an Acronym from a Phrase                    | Easy       | [solution.py](062_build_acronym/solution.py)                                                                   |
-| 063 | 2026-09-28 | Secure Token Generator (Bottle) | Medium          | [solution.py](063_secure_token_generator/solution.py)                                                                       |
+| 063 | 2026-09-28 | Secure Token Generator (Bottle)                   | Medium          | [solution.py](063_secure_token_generator/solution.py)                                                     |
+| 064 | 2026-09-30 | Process Log Parser (Regex)                        | Medium     | [solution.py](064_process_log_parser/solution.py)                                                              |
 
 ---
 
