@@ -166,6 +166,7 @@ The complete list of exercises is maintained below.
 | 064 | 2026-09-30 | Process Log Parser (Regex)                        | Medium     | [solution.py](064_process_log_parser/solution.py)                                                              |
 | 065 | 2026-10-03 | Mongard Courses Regex Scraper                     | Medium     | [solution.py](065_mongard_regex_scraper/solution.py)                                                           |
 | 066 | 2026-10-07 | Letter Distance Between Words                     | Easy       | [solution.py](066_letter_distance/solution.py)                                                                 |
+| 067 | 2026-10-09 | Find Broken Keys                                  | Easy       | [solution.py](067_broken_keyboard/solution.py)                                                                 |
 ---
 
 ## Repository Philosophy
