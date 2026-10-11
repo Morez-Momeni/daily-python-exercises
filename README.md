@@ -168,6 +168,7 @@ The complete list of exercises is maintained below.
 | 066 | 2026-10-07 | Letter Distance Between Words                     | Easy       | [solution.py](066_letter_distance/solution.py)                                                                 |
 | 067 | 2026-10-09 | Find Broken Keys                                  | Easy       | [solution.py](067_broken_keyboard/solution.py)                                                                 |
 | 068 | 2026-10-10 | Generate Hashtag                                  | Easy       | [solution.py](068_generate_hashtag/solution.py)                                                                |
+| 069 | 2026-10-11 | Anti-List Checker                                 | Easy       | [solution.py](069_anti_list/solution.py)                                                                       |
 ---
 
 ## Repository Philosophy
