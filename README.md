@@ -170,6 +170,7 @@ The complete list of exercises is maintained below.
 | 068 | 2026-10-10 | Generate Hashtag                                  | Easy       | [solution.py](068_generate_hashtag/solution.py)                                                                |
 | 069 | 2026-10-11 | Anti-List Checker                                 | Easy       | [solution.py](069_anti_list/solution.py)                                                                       |
 | 070 | 2026-10-12 | smart_zip (Extended zip)                          | Medium     | [solution.py](070_smart_zip/solution.py)                                                                       |
+| 071 | 2026-10-14 | Sigilize (Magic Sigil Generator)| Easy            | [solution.py](071_sigilize/solution.py)                                                                                     |
 ---
 
 ## Repository Philosophy
