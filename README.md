@@ -172,6 +172,7 @@ The complete list of exercises is maintained below.
 | 070 | 2026-10-12 | smart_zip (Extended zip)                          | Medium     | [solution.py](070_smart_zip/solution.py)                                                                       |
 | 071 | 2026-10-14 | Sigilize (Magic Sigil Generator)| Easy            | [solution.py](071_sigilize/solution.py)                                                                                     |
 | 072 | 2026-10-16 | Recursive File Finder                             | Medium     | [solution.py](072_search_dir_subdir/solution.py)                                                               |
+| 073 | 2026-10-16 | Check Registration Rules                          | Easy       | [solution.py](073_check_registration_rules/solution.py)                                                        |
 ---
 
 ## Repository Philosophy
