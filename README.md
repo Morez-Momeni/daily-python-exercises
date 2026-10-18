@@ -174,6 +174,7 @@ The complete list of exercises is maintained below.
 | 072 | 2026-10-16 | Recursive File Finder                             | Medium     | [solution.py](072_search_dir_subdir/solution.py)                                                               |
 | 073 | 2026-10-16 | Check Registration Rules                          | Easy       | [solution.py](073_check_registration_rules/solution.py)                                                        |
 | 074 | 2026-10-17 | Camel Case to Snake Case                          | Easy       | [solution.py](074_camel_to_snake/solution.py)                                                                  |
+| 075 | 2026-10-18 | Average of a CSV Column                           | Easy       | [solution.py](075_csv_column_average/solution.py)                                                              |
 ---
 
 ## Repository Philosophy
