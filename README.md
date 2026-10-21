@@ -177,6 +177,7 @@ The complete list of exercises is maintained below.
 | 075 | 2026-10-18 | Average of a CSV Column                           | Easy       | [solution.py](075_csv_column_average/solution.py)                                                              |
 | 076 | 2026-10-19 | Fibonacci with Memoization                        | Easy       | [solution.py](076_fibonacci_memoization/solution.py)                                                           |
 | 077 | 2026-10-20 | ZIP Password Cracker (Dictionary)                 | Medium     | [solution.py](077_zip_password_cracker/solution.py)                                                            |
+| 078 | 2026-10-21 | ZIP Extractor Web App (Flask)                     | Hard       | [app.py](078_zip_extractor_flask/app.py), [cracker.py](078_zip_extractor_flask/cracker.py)                     |
 ---
 
 ## Repository Philosophy
