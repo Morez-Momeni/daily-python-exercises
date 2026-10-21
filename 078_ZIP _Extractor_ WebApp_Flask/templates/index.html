@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ziply | استخراج آرشیو ZIP</title>
+  <style>
+    :root {
+      --bg:#080b10; --panel:#101720; --panel2:#0c121a; --border:#263341;
+      --text:#e8f0f7; --muted:#91a0af; --green:#8df5bd; --blue:#78b7ff; --danger:#ff8f9b;
+    }
+    * { box-sizing:border-box; }
+    body {
+      margin:0; min-height:100vh; padding:32px 18px;
+      background:radial-gradient(ellipse at top,#132235 0%,var(--bg) 56%);
+      color:var(--text); font-family:Tahoma,Arial,sans-serif;
+    }
+    .app { width:min(1050px,100%); margin:0 auto; }
+    header { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:32px; }
+    .brand { display:flex; align-items:center; gap:12px; }
+    .logo {
+      width:44px; height:44px; display:grid; place-items:center; border-radius:13px;
+      color:var(--green); border:1px solid #355b50; background:#12251f; font-size:22px; font-weight:bold;
+    }
+    h1 { margin:0; font-size:22px; }
+    .subtitle { margin:6px 0 0; color:var(--muted); font-size:13px; }
+    .local-tag { color:var(--green); border:1px solid #2a5545; background:#10231d; border-radius:999px; padding:8px 12px; font-size:12px; }
+    .intro { margin:0 0 24px; }
+    .intro h2 { margin:0 0 10px; font-size:clamp(23px,4vw,32px); }
+    .intro p { margin:0; color:var(--muted); line-height:1.9; max-width:720px; font-size:14px; }
+    .layout { display:grid; grid-template-columns:1.05fr .95fr; gap:18px; align-items:start; }
+    .card { background:linear-gradient(160deg,#121b26,var(--panel2)); border:1px solid var(--border); border-radius:18px; padding:22px; }
+    .card h3 { margin:0 0 7px; font-size:16px; }
+    .hint { color:var(--muted); font-size:12px; line-height:1.8; margin:0 0 18px; }
+    .dropzone {
+      min-height:220px; padding:24px; display:flex; flex-direction:column; justify-content:center; align-items:center;
+      border:1px dashed #496174; border-radius:14px; background:#0b121a; text-align:center; transition:.18s ease;
+    }
+    .dropzone.dragover { border-color:var(--green); background:#102019; }
+    .zip-icon { width:55px; height:55px; display:grid; place-items:center; border:1px solid #30485b; border-radius:16px; color:var(--blue); font-size:22px; margin-bottom:14px; }
+    .dropzone strong { font-size:15px; margin-bottom:8px; }
+    .dropzone p { margin:0 0 16px; color:var(--muted); font-size:12px; }
+    input[type=file] { display:none; }
+    .button {
+      border:0; border-radius:10px; padding:12px 16px; cursor:pointer; font:inherit; font-size:13px; font-weight:bold;
+      transition:transform .15s ease,opacity .15s ease;
+    }
+    .button:active { transform:scale(.98); }
+    .primary { background:var(--green); color:#082016; }
+    .secondary { color:var(--text); background:#1b2836; border:1px solid #34485a; }
+    .primary:disabled { opacity:.45; cursor:not-allowed; }
+    .selected-file { width:100%; margin-top:15px; padding:11px 12px; border-radius:10px; background:#121e29; border:1px solid #263c4d; text-align:right; display:none; overflow-wrap:anywhere; }
+    .selected-file span { color:var(--muted); font-size:11px; display:block; margin-top:5px; }
+    .actions { display:flex; gap:10px; margin-top:16px; }
+    .actions .primary { flex:1; }
+    .status { margin-top:15px; padding:12px 13px; border-radius:10px; border:1px solid #2b3b49; background:#0b1219; color:var(--muted); font-size:12px; line-height:1.8; }
+    .status.success { color:var(--green); border-color:#2d5b48; }
+    .status.error { color:var(--danger); border-color:#633640; }
+    .status.working { color:var(--blue); border-color:#315477; }
+    .steps { display:grid; gap:11px; margin-top:20px; }
+    .step { display:flex; gap:11px; align-items:flex-start; color:var(--muted); font-size:12px; line-height:1.8; }
+    .step-num { flex:0 0 25px; width:25px; height:25px; display:grid; place-items:center; border-radius:8px; background:#182635; color:var(--blue); font-weight:bold; }
+    .results-head { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:14px; }
+    .count { color:var(--muted); font-size:11px; }
+    .file-list { display:grid; gap:9px; }
+    .empty { min-height:260px; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; color:var(--muted); border:1px dashed #2b3b49; border-radius:13px; padding:24px; }
+    .empty .empty-icon { font-size:29px; margin-bottom:12px; }
+    .empty strong { color:#cbd6e0; font-size:13px; margin-bottom:8px; }
+    .empty p { font-size:12px; line-height:1.8; margin:0; max-width:280px; }
+    .file-row { display:flex; align-items:center; gap:10px; padding:12px; background:#0b1219; border:1px solid #243544; border-radius:10px; }
+    .file-symbol { width:35px; height:35px; flex:0 0 35px; display:grid; place-items:center; border-radius:9px; background:#172838; color:var(--blue); }
+    .file-info { min-width:0; flex:1; }
+    .file-name { font-size:12px; overflow-wrap:anywhere; }
+    .file-meta { color:var(--muted); font-size:10px; margin-top:5px; }
+    .notice { margin-top:18px; border-right:3px solid #547a9d; padding:10px 12px; background:#0d1721; color:var(--muted); font-size:11px; line-height:1.9; border-radius:5px 10px 10px 5px; }
+    footer { margin-top:22px; color:#687887; text-align:center; font-size:11px; line-height:1.8; }
+    @media(max-width:760px) { .layout { grid-template-columns:1fr; } header { align-items:flex-start; } .local-tag { display:none; } .card { padding:17px; } }
+  </style>
+</head>
+<body>
+<main class="app">
+  <header>
+    <div class="brand">
+      <div class="logo">Z</div>
+      <div><h1>Ziply</h1><p class="subtitle">استخراج آرشیو ZIP</p></div>
+    </div>
+    <div class="local-tag">استخراج با واژه‌نامهٔ داخلی</div>
+  </header>
+
+  <section class="intro">
+    <h2>آرشیوت رو اینجا باز کن.</h2>
+    <p>فایل ZIP را انتخاب کن. ابتدا استخراج معمولی انجام می‌شود؛ اگر آرشیو رمز داشته باشد، برنامه به‌صورت خودکار واژه‌نامهٔ سمت سرور را بررسی می‌کند.</p>
+  </section>
+
+  <section class="layout">
+    <div class="card">
+      <h3>انتخاب آرشیو</h3>
+      <p class="hint">فایل ZIP را انتخاب کن؛ نیازی به وارد کردن رمز نیست.</p>
+      <div class="dropzone" id="dropzone">
+        <div class="zip-icon">ZIP</div>
+        <strong>فایل را اینجا رها کن</strong>
+        <p>یا از روی دستگاه انتخابش کن · فقط فایل‌های ‎.zip</p>
+        <label for="zipFile" class="button secondary">انتخاب فایل</label>
+        <input id="zipFile" type="file" accept=".zip,application/zip">
+        <div class="selected-file" id="selectedFile"></div>
+      </div>
+      <div class="actions">
+        <button class="button primary" id="extractBtn" disabled>شروع استخراج</button>
+        <button class="button secondary" id="resetBtn" type="button">پاک‌کردن</button>
+      </div>
+      <div class="status" id="status" role="status" aria-live="polite">برای شروع، یک فایل ZIP انتخاب کن.</div>
+      <div class="steps">
+        <div class="step"><span class="step-num">1</span><span><strong>استخراج عادی</strong><br>برنامه ابتدا تلاش می‌کند بدون رمز آرشیو را باز کند.</span></div>
+        <div class="step"><span class="step-num">2</span><span><strong>بررسی واژه‌نامه</strong><br>اگر رمز لازم باشد، بک‌اند رمزهای موجود در <code>passwd.txt</code> را امتحان می‌کند.</span></div>
+        <div class="step"><span class="step-num">3</span><span><strong>نمایش نتیجه</strong><br>فهرست فایل‌های استخراج‌شده در این بخش نمایش داده می‌شود.</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="results-head">
+        <div><h3>محتویات استخراج‌شده</h3><p class="hint" style="margin:6px 0 0">فهرست فایل‌های آرشیو</p></div>
+        <span class="count" id="fileCount">۰ فایل</span>
+      </div>
+      <div class="file-list" id="fileList">
+        <div class="empty"><div class="empty-icon">▤</div><strong>هنوز فایلی استخراج نشده</strong><p>بعد از استخراج موفق، فهرست فایل‌ها اینجا نمایش داده می‌شود.</p></div>
+      </div>
+      <div class="notice">این برنامه در نسخهٔ فعلی فقط فهرست فایل‌ها را نشان می‌دهد؛ محتوای فایل‌ها برای دانلود ارائه نمی‌شود.</div>
+    </div>
+  </section>
+  <footer>Ziply · رابط کاربری Flask + Python</footer>
+</main>
+
+<script>
+  const fileInput = document.getElementById('zipFile');
+  const dropzone = document.getElementById('dropzone');
+  const selectedFile = document.getElementById('selectedFile');
+  const extractBtn = document.getElementById('extractBtn');
+  const resetBtn = document.getElementById('resetBtn');
+  const statusBox = document.getElementById('status');
+  let selectedZip = null;
+
+  function setStatus(message, type = '') {
+    statusBox.textContent = message;
+    statusBox.className = 'status' + (type ? ' ' + type : '');
+  }
+
+  function chooseFile(file) {
+    if (!file) return;
+    if (!file.name.toLowerCase().endsWith('.zip')) {
+      selectedZip = null;
+      fileInput.value = '';
+      selectedFile.style.display = 'none';
+      extractBtn.disabled = true;
+      setStatus('فرمت فایل معتبر نیست؛ لطفاً یک فایل ZIP انتخاب کن.', 'error');
+      return;
+    }
+    selectedZip = file;
+    const size = file.size < 1024 * 1024
+      ? `${(file.size / 1024).toFixed(1)} KB`
+      : `${(file.size / (1024 * 1024)).toFixed(2)} MB`;
+
+    selectedFile.replaceChildren();
+    const name = document.createElement('strong');
+    name.textContent = file.name;
+    const detail = document.createElement('span');
+    detail.textContent = size;
+    selectedFile.append(name, detail);
+    selectedFile.style.display = 'block';
+    extractBtn.disabled = false;
+    setStatus('فایل انتخاب شد. برای شروع، روی «شروع استخراج» بزن.');
+  }
+
+  fileInput.addEventListener('change', () => chooseFile(fileInput.files[0]));
+
+  for (const eventName of ['dragenter', 'dragover']) {
+    dropzone.addEventListener(eventName, event => {
+      event.preventDefault();
+      dropzone.classList.add('dragover');
+    });
+  }
+  for (const eventName of ['dragleave', 'drop']) {
+    dropzone.addEventListener(eventName, event => {
+      event.preventDefault();
+      dropzone.classList.remove('dragover');
+    });
+  }
+  dropzone.addEventListener('drop', event => {
+    const file = event.dataTransfer.files[0];
+    if (file) chooseFile(file);
+  });
+
+  extractBtn.addEventListener('click', async () => {
+    if (!selectedZip) {
+      setStatus('ابتدا یک فایل انتخاب کن.', 'error');
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append('file', selectedZip);
+
+    extractBtn.disabled = true;
+    setStatus('در حال ارسال فایل و استخراج...', 'working');
+
+    try {
+      const response = await fetch('/api/extract', {
+        method: 'POST',
+        body: formData
+      });
+      const data = await response.json();
+
+      if (!response.ok || !data.ok) {
+        setStatus(data.message || 'استخراج ناموفق بود.', 'error');
+        return;
+      }
+
+      setStatus(data.message, 'success');
+      showFiles(data.files || []);
+    } catch (error) {
+      setStatus('ارتباط با سرور برقرار نشد. مطمئن شو Flask در حال اجراست.', 'error');
+    } finally {
+      extractBtn.disabled = false;
+    }
+  });
+
+  function showFiles(files) {
+    const fileList = document.getElementById('fileList');
+    const fileCount = document.getElementById('fileCount');
+    fileList.replaceChildren();
+    fileCount.textContent = `${files.length} فایل`;
+
+    if (files.length === 0) {
+      const empty = document.createElement('div');
+      empty.className = 'empty';
+      const title = document.createElement('strong');
+      title.textContent = 'فایلی برای نمایش پیدا نشد';
+      const message = document.createElement('p');
+      message.textContent = 'استخراج انجام شد، اما آرشیو فایل قابل نمایش ندارد.';
+      empty.append(title, message);
+      fileList.appendChild(empty);
+      return;
+    }
+
+    for (const file of files) {
+      const row = document.createElement('div');
+      row.className = 'file-row';
+      const icon = document.createElement('div');
+      icon.className = 'file-symbol';
+      icon.textContent = '▤';
+
+      const info = document.createElement('div');
+      info.className = 'file-info';
+      const name = document.createElement('div');
+      name.className = 'file-name';
+      name.textContent = file.name;
+      const size = document.createElement('div');
+      size.className = 'file-meta';
+      size.textContent = `${Number(file.size).toLocaleString('fa-IR')} بایت`;
+      info.append(name, size);
+      row.append(icon, info);
+      fileList.appendChild(row);
+    }
+  }
+
+  resetBtn.addEventListener('click', () => {
+    fileInput.value = '';
+    selectedZip = null;
+    selectedFile.style.display = 'none';
+    selectedFile.replaceChildren();
+    extractBtn.disabled = true;
+    setStatus('برای شروع، یک فایل ZIP انتخاب کن.');
+  });
+</script>
+</body>
+</html>
