@@ -179,6 +179,7 @@ The complete list of exercises is maintained below.
 | 077 | 2026-10-20 | ZIP Password Cracker (Dictionary)                 | Medium     | [solution.py](077_zip_password_cracker/solution.py)                                                            |
 | 078 | 2026-10-21 | ZIP Extractor Web App (Flask)                     | Hard       | [app.py](078_zip_extractor_flask/app.py), [cracker.py](078_zip_extractor_flask/cracker.py)                     |
 | 079 | 2026-10-22 | Count Word Occurrences                            | Easy       | [solution.py](079_count_word_occurrences/solution.py)                                                          |
+| 080 | 2026-10-23 | Least Common Multiple (LCM)                       | Easy       | [solution.py](080_lcm/solution.py)                                                                             |
 ---
 
 ## Repository Philosophy
