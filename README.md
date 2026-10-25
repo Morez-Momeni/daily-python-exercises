@@ -180,7 +180,8 @@ The complete list of exercises is maintained below.
 | 078 | 2026-10-21 | ZIP Extractor Web App (Flask)                     | Hard       | [app.py](078_zip_extractor_flask/app.py), [cracker.py](078_zip_extractor_flask/cracker.py)                     |
 | 079 | 2026-10-22 | Count Word Occurrences                            | Easy       | [solution.py](079_count_word_occurrences/solution.py)                                                          |
 | 080 | 2026-10-23 | Least Common Multiple (LCM)                       | Easy       | [solution.py](080_lcm/solution.py)                                                                             |
-| 081 | 2026-10-24 | Implement `ls` with Colors                        | Easy       | [solution.py](081_ls_with_colors/solution.py)                                                                  | 
+| 081 | 2026-10-24 | Implement `ls` with Colors                        | Easy       | [solution.py](081_ls_with_colors/solution.py)                                                                  |
+| 082 | 2026-10-25 | Implement `ls -l` (Long Format)                   | Easy       | [solution.py](082_ls_with_details/solution.py)                                                                 |
 ---
 
 ## Repository Philosophy
