@@ -182,6 +182,7 @@ The complete list of exercises is maintained below.
 | 080 | 2026-10-23 | Least Common Multiple (LCM)                       | Easy       | [solution.py](080_lcm/solution.py)                                                                             |
 | 081 | 2026-10-24 | Implement `ls` with Colors                        | Easy       | [solution.py](081_ls_with_colors/solution.py)                                                                  |
 | 082 | 2026-10-25 | Implement `ls -l` (Long Format)                   | Easy       | [solution.py](082_ls_with_details/solution.py)                                                                 |
+| 083 | 2026-10-29 | 3x3 Prime Matrices                                | Easy       | [solution.py](083_prime_matrix/solution.py)                                                                    |
 ---
 
 ## Repository Philosophy
