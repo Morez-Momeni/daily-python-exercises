@@ -170,7 +170,7 @@ The complete list of exercises is maintained below.
 | 068 | 2026-10-10 | Generate Hashtag                                  | Easy       | [solution.py](068_generate_hashtag/solution.py)                                                                |
 | 069 | 2026-10-11 | Anti-List Checker                                 | Easy       | [solution.py](069_anti_list/solution.py)                                                                       |
 | 070 | 2026-10-12 | smart_zip (Extended zip)                          | Medium     | [solution.py](070_smart_zip/solution.py)                                                                       |
-| 071 | 2026-10-14 | Sigilize (Magic Sigil Generator)| Easy            | [solution.py](071_sigilize/solution.py)                                                                                     |
+| 071 | 2026-10-14 | Sigilize (Magic Sigil Generator)                  | Easy       | [solution.py](071_sigilize/solution.py)                                                                        |
 | 072 | 2026-10-16 | Recursive File Finder                             | Medium     | [solution.py](072_search_dir_subdir/solution.py)                                                               |
 | 073 | 2026-10-16 | Check Registration Rules                          | Easy       | [solution.py](073_check_registration_rules/solution.py)                                                        |
 | 074 | 2026-10-17 | Camel Case to Snake Case                          | Easy       | [solution.py](074_camel_to_snake/solution.py)                                                                  |
@@ -183,6 +183,11 @@ The complete list of exercises is maintained below.
 | 081 | 2026-10-24 | Implement `ls` with Colors                        | Easy       | [solution.py](081_ls_with_colors/solution.py)                                                                  |
 | 082 | 2026-10-25 | Implement `ls -l` (Long Format)                   | Easy       | [solution.py](082_ls_with_details/solution.py)                                                                 |
 | 083 | 2026-10-29 | 3x3 Prime Matrices                                | Easy       | [solution.py](083_prime_matrix/solution.py)                                                                    |
+| 084 | 2026-11-05 | Sum of Prime Numbers Below 51                     | Easy       | [solution.py](084_sum_of_primes/solution.py)                                                                   |
+| 085 | 2026-11-06 | Reverse a String Manually                         | Easy       | [solution.py](085_manual_reverse/solution.py)                                                                  |
+| 086 | 2026-11-07 | Find Equilibrium Index                            | Easy       | [solution.py](086_equilibrium_index/solution.py)                                                               |
+| 087 | 2026-11-18 | Convert 2D Index to 1D Index                      | Easy       | [solution.py](087_2d_to_1d_index/solution.py)                                                                  |
+| 088 | 2026-11-21 | Prefix Sum (First N Elements)                     | Easy       | [solution.py](088_prefix_sum/solution.py)                                                                      |
 ---
 
 ## Repository Philosophy
